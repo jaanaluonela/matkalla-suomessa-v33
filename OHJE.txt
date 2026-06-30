@@ -1,22 +1,2 @@
-V34 Premium etusivu
-
-Tiedostot:
-- index.html
-- kartta.html
-- paijat-hame.html
-- paivakirja.html
-- profiili.html
-- data.js
-- sovellus.js
-- tyylit.css
-
-Päivityksen idea:
-- etusivulta poistettu kuntabongauslaskurit
-- uusi modernimpi hero-näkymä
-- Avaa kartta ja Lisää matka -pikakortit
-- Jatka matkaa -kortti
-- Suosikit-osio
-- Lähellä sinua -osio
-- Lisää kuva, sijainti ja muistiinpano -toiminnot näkyvät omassa osiossa
-
-Kuntabongaus pysyy kartta/profiili-sivuilla eikä ole etusivun pääsisältö.
+V40 SUURI ETUSIVU
+Pura ZIP ja lataa kaikki tiedostot GitHubiin matkalla-suomessa-v33 repositorioon vanhojen päälle.

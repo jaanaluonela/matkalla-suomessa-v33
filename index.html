@@ -1,108 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matkalla Suomessa</title>
   <link rel="stylesheet" href="tyylit.css" />
 </head>
 <body>
-  <div class="app">
-    <header class="hero real-hero">
-      <div class="hero-photo"></div>
-      <div class="toprow floating">
-        <button class="round glass">☰</button>
-        <div class="top-actions">
-          <button class="round glass bell">🔔</button>
-          <button class="round glass">♡</button>
-        </div>
+  <div class="phone-shell">
+    <header class="hero hero-photo">
+      <div class="top-actions">
+        <button class="circle">☰</button>
+        <div class="right-actions"><button class="circle">🔔<i></i></button><button class="circle">♡</button></div>
       </div>
-      <div class="brand-hero">
+      <div class="hero-title">
         <div class="script">Matkalla</div>
-        <div class="wide">SUOMESSA</div>
+        <div class="spaced">SUOMESSA</div>
         <p>Koe. Tutustu. Muista.</p>
       </div>
-      <button class="search hero-search" onclick="showSearch()">🔍 Hae kuntaa, paikkaa tai nähtävyyttä...</button>
+      <div class="camper">🚐</div>
     </header>
 
-    <main class="content home-content v37">
-      <section class="quick-grid lifted">
-        <button class="quick-card map" onclick="go('map')">
-          <span class="icon fin">🇫🇮</span>
-          <b>Avaa kartta</b>
-          <small>Tutustu Suomeen maakunta kerrallaan</small>
-          <em>›</em>
-        </button>
-        <button class="quick-card add" onclick="go('newTrip')">
-          <span class="icon plus">＋</span>
-          <b>Lisää matka</b>
-          <small>Tallenna uusi kohde ja muistot</small>
-          <em>›</em>
-        </button>
+    <main class="content raised">
+      <button class="searchbar">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></button>
+
+      <section class="quick-grid">
+        <a class="quick-card" href="kartta.html"><b>🇫🇮</b><h2>Avaa kartta</h2><p>Tutustu Suomeen maakunta kerrallaan</p><span>›</span></a>
+        <a class="quick-card primary" href="paivakirja.html"><b>＋</b><h2>Lisää matka</h2><p>Tallenna uusi kohde ja muistot</p><span>›</span></a>
+        <a class="quick-card mini" href="#suosikit"><b>❤️</b><h2>Suosikit</h2><p>Omat parhaat paikat</p><span>›</span></a>
+        <a class="quick-card mini" href="#lahella"><b>📍</b><h2>Lähellä</h2><p>Kohteet kartalla</p><span>›</span></a>
       </section>
 
-      <section class="map-teaser v38-teaser" onclick="go('map')">
-        <div>
-          <small>UUSI SELKEÄ MUUTOS</small>
-          <h2>Matkakartta uudistui</h2>
-          <p>Kartalla näkyvät nyt matkakohteet, lähellä olevat paikat ja kuntabongaus omalla välilehdellä.</p>
-        </div>
-        <button>Katso kartta ›</button>
+      <section class="section-row">
+        <h1>Jatka matkaa</h1><a href="paivakirja.html">Näytä kaikki ›</a>
       </section>
-
-      <section class="section-title first"><h2>Jatka matkaa</h2><button>Näytä kaikki ›</button></section>
-      <article class="continue-card premium">
-        <div class="continue-img fire"></div>
-        <div class="continue-body">
-          <small>Viimeisin matka</small>
-          <h3>Päijät-Häme</h3>
-          <p>Asikkala – Vääksy – Pulkkilanharju</p>
-          <div class="bar"><span style="width:63%"></span></div>
-          <div class="row"><span>Käyty kunnista 5 / 8</span><b>63%</b></div>
-        </div>
+      <article class="continue-card">
+        <div class="trip-img">🔥</div>
+        <div class="trip-info"><small>Viimeisin matka</small><h2>Päijät-Häme</h2><p>Asikkala – Vääksy – Pulkkilanharju</p><div class="progress"><i style="width:63%"></i></div><footer><span>Käyty 5 / 8</span><b>63%</b></footer></div>
       </article>
 
-      <section class="section-title"><h2>Suosikit</h2><button>Näytä kaikki ›</button></section>
-      <div class="favorite-row premium-row">
-        <article class="fav castle"><button>♥</button><b>Häme</b><span>5 kohdetta</span></article>
-        <article class="fav coast"><button>♥</button><b>Varsinais-Suomi</b><span>3 kohdetta</span></article>
-        <article class="fav lake"><button>♥</button><b>Päijänne</b><span>2 kohdetta</span></article>
-        <article class="fav north"><button>♥</button><b>Lappi</b><span>1 kohde</span></article>
+      <section id="suosikit" class="section-row"><h1>Suosikit</h1><a>Näytä kaikki ›</a></section>
+      <div class="cards-scroll">
+        <article class="fav lake"><button>♥</button><h3>Päijänne</h3><p>2 kohdetta</p></article>
+        <article class="fav castle"><button>♥</button><h3>Häme</h3><p>5 kohdetta</p></article>
+        <article class="fav forest"><button>♥</button><h3>Lappi</h3><p>1 kohde</p></article>
+        <article class="fav coast"><button>♥</button><h3>Varsinais-Suomi</h3><p>3 kohdetta</p></article>
       </div>
 
-      <section class="section-title"><h2>Lisää tietoja matkaasi</h2><button>Näytä lisää ˅</button></section>
-      <div class="tool-grid premium-tools">
-        <button>📷<span>Kuvat</span></button>
-        <button>📍<span>Sijainti</span></button>
-        <button>📝<span>Muistiinpano</span></button>
-        <button>⭐<span>Arvio</span></button>
+      <section id="lahella" class="section-row"><h1>Lähellä sinua</h1><a href="kartta.html">Kartalla ›</a></section>
+      <div class="near-list">
+        <article><b>📍</b><div><h3>Pulkkilanharju</h3><p>Luontokohde · 6 km · ⭐ 4,8</p></div><button>Avaa</button></article>
+        <article><b>☕</b><div><h3>Kahvila</h3><p>Tauko ja herkkuhetki · 2 km · ⭐ 4,5</p></div><button>Avaa</button></article>
+        <article><b>🏕️</b><div><h3>Leirintäalue</h3><p>Yöpyminen · 11 km · ⭐ 4,6</p></div><button>Avaa</button></article>
       </div>
 
-      <section class="section-title"><h2>Lähellä sinua</h2><button>Kartalla ›</button></section>
-      <div class="near-list premium-near">
-        <button><span class="near-thumb pulkki"></span><span><b>Pulkkilanharju</b><small>Luontokohde · 6 km · ★ 4,8</small></span><em>Avaa</em></button>
-        <button><span class="near-thumb cafe"></span><span><b>Kahvila Kanavan Helmi</b><small>Tauko ja herkkuhetki · 2 km · ★ 4,6</small></span><em>Avaa</em></button>
-        <button><span class="near-thumb camp"></span><span><b>Leirintäalue</b><small>Yöpyminen · 11 km · ★ 4,5</small></span><em>Avaa</em></button>
-      </div>
-
-      <section class="section-title"><h2>Vinkit matkalle</h2><button>Näytä kaikki ›</button></section>
+      <section class="section-row"><h1>Vinkit matkalle</h1><a>Näytä lisää ›</a></section>
       <div class="tip-grid">
-        <button><span>🚐</span><b>Leirintäalueet</b><small>Yöpymiseen</small></button>
-        <button><span>🅿️</span><b>Pysäköinti</b><small>Helppo pysähdys</small></button>
-        <button><span>🚰</span><b>Huoltopisteet</b><small>Matkan varrelle</small></button>
-        <button><span>🍴</span><b>Ravintolat</b><small>Paikalliset herkut</small></button>
+        <button>🚐<span>Matkaparkit</span></button><button>🏕️<span>Leirintäalueet</span></button><button>🍴<span>Ravintolat</span></button><button>🅿️<span>Pysäköinti</span></button>
       </div>
-      <div class="bottom-space"></div>
     </main>
 
-    <nav class="bottomnav">
-      <button class="active" onclick="go('home')">🏠<span>Etusivu</span></button>
-      <button onclick="go('map')">🗺️<span>Kartta</span></button>
-      <button class="center" onclick="go('newTrip')">＋</button>
-      <button onclick="go('diary')">📖<span>Päiväkirja</span></button>
-      <button onclick="go('profile')">👤<span>Minä</span></button>
+    <nav class="bottom-nav">
+      <a class="active" href="index.html">🏠<span>Etusivu</span></a><a href="kartta.html">🗺️<span>Kartta</span></a><a class="plus" href="paivakirja.html">＋</a><a href="paivakirja.html">📖<span>Päiväkirja</span></a><a href="profiili.html">👤<span>Minä</span></a>
     </nav>
   </div>
-  <script src="data.js"></script><script src="sovellus.js"></script>
 </body>
 </html>

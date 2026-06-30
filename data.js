@@ -1,4 +1,1 @@
-const APP_DATA = {
-  places: ['Pulkkilanharju','Vääksyn kanava','Lahti','Verla','Päijänne'],
-  regions: ['Uusimaa','Varsinais-Suomi','Päijät-Häme','Lappi']
-};
+window.MATKALLA_DATA={version:'v40',municipalities:309,regions:19};
