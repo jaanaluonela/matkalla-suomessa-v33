@@ -1,3 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Matkalla Suomessa v2.1 premium ladattu');
-});
+// Matkalla Suomessa v22 – app placeholder

@@ -4,75 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matkalla Suomessa</title>
-  <link rel="stylesheet" href="tyylit.css?v=21" />
+  <link rel="stylesheet" href="tyylit.css?v=22" />
 </head>
 <body>
-  <div class="phone-shell">
+  <div class="app-shell">
     <header class="hero">
-      <div class="topbar">
+      <div class="top-icons">
         <button class="round">☰</button>
-        <button class="round bell">🔔</button>
+        <button class="bell">🔔<span></span></button>
       </div>
-      <div class="brand">
-        <div class="script">Matkalla</div>
-        <div class="wide">SUOMESSA</div>
-        <p>Suomen matkailun oma päiväkirja</p>
+      <div class="logo-block">
+        <div class="script">Matkalla <span>♡</span></div>
+        <div class="spaced">SUOMESSA</div>
+        <p>Koe. Tutustu. Muista.</p>
       </div>
-      <div class="search">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></div>
+      <div class="camper">🚐</div>
+      <a class="search" href="kartta.html">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></a>
     </header>
 
     <main class="content">
-      <section class="quick-actions">
+      <section class="actions">
         <a class="action-card" href="kartta.html">
-          <div class="icon finland">🇫🇮</div>
+          <div class="map-shape">▰</div>
           <div><h2>Avaa kartta</h2><p>Tutustu Suomeen maakunta kerrallaan</p></div>
           <b>›</b>
         </a>
         <a class="action-card" href="paivakirja.html">
-          <div class="icon plus">＋</div>
+          <div class="plus-mini">+</div>
           <div><h2>Lisää matka</h2><p>Tallenna uusi kohde ja muistot</p></div>
           <b>›</b>
         </a>
       </section>
 
-      <section class="section-title"><h2>Jatka matkaa</h2><a href="paivakirja.html">Näytä kaikki ›</a></section>
+      <section class="section-head">
+        <h2>Jatka matkaa</h2><a href="paivakirja.html">Näytä kaikki ›</a>
+      </section>
       <article class="continue-card">
         <div class="trip-photo"></div>
         <div class="trip-info">
           <small>Viimeisin matka</small>
           <h3>Päijät-Häme</h3>
           <p>Asikkala – Vääksy – Pulkkilanharju</p>
-          <div class="progress"><span></span></div>
-          <div class="progress-row"><span>Käyty kunnista 5 / 8</span><b>63%</b></div>
+          <div class="progress"><i style="width:63%"></i></div>
+          <div class="meta"><span>Käyty kunnista 5 / 8</span><strong>63%</strong></div>
         </div>
       </article>
 
-      <section class="section-title"><h2>Suosikit</h2><a href="kartta.html">Näytä kaikki ›</a></section>
-      <section class="favorites">
-        <article class="fav castle"><button>❤</button><h3>Häme</h3><p>5 kohdetta</p></article>
-        <article class="fav archipelago"><button>❤</button><h3>Varsinais-Suomi</h3><p>3 kohdetta</p></article>
-        <article class="fav lake"><button>❤</button><h3>Päijänne</h3><p>2 kohdetta</p></article>
-        <article class="fav lapland"><button>❤</button><h3>Lappi</h3><p>1 kohde</p></article>
+      <section class="section-head">
+        <h2>Suosikit</h2><a href="kartta.html">Näytä kaikki ›</a>
       </section>
+      <div class="favorites">
+        <article class="fav castle"><button>❤️</button><h3>Häme</h3><p>5 kohdetta</p></article>
+        <article class="fav coast"><button>❤️</button><h3>Varsinais-Suomi</h3><p>3 kohdetta</p></article>
+        <article class="fav lake"><button>❤️</button><h3>Päijänne</h3><p>2 kohdetta</p></article>
+        <article class="fav lapland"><button>❤️</button><h3>Lappi</h3><p>1 kohde</p></article>
+      </div>
 
-      <section class="section-title"><h2>Karavaanarin vinkit</h2></section>
-      <section class="tips">
-        <a href="kartta.html" class="tip green">🚐<b>Leirintäalueet</b><span>127 kohdetta</span></a>
-        <a href="kartta.html" class="tip blue">💧<b>Palvelupisteet</b><span>82 kohdetta</span></a>
-        <a href="kartta.html" class="tip violet">🅿️<b>Pysäköinti</b><span>Yli 200 paikkaa</span></a>
-        <a href="kartta.html" class="tip peach">🍴<b>Ravintolat</b><span>Paikalliset suosikit</span></a>
-      </section>
+      <section class="section-head no-link"><h2>Karavaanarin vinkit</h2></section>
+      <div class="tips">
+        <a href="kartta.html" class="tip green"><span>🚐</span><strong>Leirintäalueet</strong><small>1200+ kohdetta</small></a>
+        <a href="kartta.html" class="tip blue"><span>💧</span><strong>Palvelu-pisteet</strong><small>Etsi läheltä</small></a>
+        <a href="kartta.html" class="tip purple"><span>🅿️</span><strong>Pysäköinti</strong><small>Yöpymispaikat</small></a>
+        <a href="kartta.html" class="tip orange"><span>🍴</span><strong>Ravintolat</strong><small>Paikallisia suosikkeja</small></a>
+      </div>
     </main>
 
-    <a class="floating" href="paivakirja.html">＋</a>
     <nav class="bottom-nav">
-      <a class="active" href="index.html">🏠<span>Koti</span></a>
-      <a href="kartta.html">🗺️<span>Kartta</span></a>
-      <a href="paivakirja.html">🧳<span>Matka</span></a>
-      <a href="paivakirja.html">📖<span>Päiväkirja</span></a>
-      <a href="profiili.html">👤<span>Minä</span></a>
+      <a class="active" href="index.html">⌂<span>Koti</span></a>
+      <a href="kartta.html">♧<span>Kartta</span></a>
+      <a class="big-plus" href="paivakirja.html">+</a>
+      <a href="paivakirja.html">▤<span>Päiväkirja</span></a>
+      <a href="profiili.html">♙<span>Minä</span></a>
     </nav>
   </div>
-  <script src="sovellus.js?v=21"></script>
 </body>
 </html>

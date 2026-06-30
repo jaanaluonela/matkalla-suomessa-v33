@@ -1,1 +1,1 @@
-window.MATKALLA_DATA={version:'2.1-premium'};
+// Matkalla Suomessa v22 – data placeholder

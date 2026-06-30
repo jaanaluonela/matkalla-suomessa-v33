@@ -1,1 +1,2 @@
-Pura ZIP. Lataa GitHubiin vain tämän kansion sisällä olevat tiedostot. Älä lataa ZIP-tiedostoa repojuureen.
+Pura ZIP ja lataa GitHubiin vain tämän kansion sisällä olevat tiedostot.
+Älä lataa itse ZIP-tiedostoa.
