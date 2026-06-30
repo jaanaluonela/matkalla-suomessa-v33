@@ -1,1 +1,90 @@
-<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kartta</title><link rel="stylesheet" href="tyylit.css"></head><body><div class="app page"><header class="page-head"><b>🚌 Matkalla Suomessa</b><button onclick="showSearch()">🔍</button></header><main class="content"><h1>Suomen kartta</h1><p class="lead">Kuntabongaus on täällä omalla sivullaan. Valitse maakunta ja jatka omaa matkakirjaasi.</p><section class="stats"><div><b>3</b><span>Käytyä</span></div><div><b>309</b><span>Kuntaa</span></div><div><b>19</b><span>Maakuntaa</span></div></section><section class="map-card"><div class="finland-shape"><span class="pin p1">L<br>0%</span><span class="pin p2">PP<br>0%</span><span class="pin p3">PH<br>8%</span><span class="pin p4">VS<br>4%</span><span class="pin p5">U<br>0%</span></div><div class="legend"><span>○ Aloittamatta</span><span>● Aloitettu</span><span>● Valmis</span></div></section><h2>Maakunnat</h2><div class="region-list"><button onclick="location.href='paijat-hame.html'">📍 Päijät-Häme <span>3/14</span></button><button>⚓ Varsinais-Suomi <span>1/27</span></button><button>🏙️ Uusimaa <span>2/26</span></button></div></main><nav class="bottomnav"><button onclick="go('home')">🏠<span>Etusivu</span></button><button class="active" onclick="go('map')">🗺️<span>Kartta</span></button><button class="center" onclick="go('newTrip')">＋</button><button onclick="go('diary')">📖<span>Päiväkirja</span></button><button onclick="go('profile')">👤<span>Minä</span></button></nav></div><script src="data.js"></script><script src="sovellus.js"></script></body></html>
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kartta – Matkalla Suomessa</title>
+  <link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+<div class="app page map-v38-page">
+  <header class="map-top-v38">
+    <button onclick="go('home')">‹</button>
+    <div>
+      <b>Matkakartta</b>
+      <span>Löydä paikat ja jatka matkaa</span>
+    </div>
+    <button onclick="showSearch()">🔍</button>
+  </header>
+
+  <main class="content map-v38-content">
+    <section class="map-hero-v38">
+      <div class="map-hero-bg"></div>
+      <div class="map-hero-text">
+        <small>Uusi karttanäkymä</small>
+        <h1>Suomi yhdellä silmäyksellä</h1>
+        <p>Matkakohteet, suosikit ja kuntabongaus ovat nyt omissa selkeissä osioissaan.</p>
+      </div>
+    </section>
+
+    <section class="map-tabs-v38">
+      <button class="active">Matkakohteet</button>
+      <button>Kuntabongaus</button>
+      <button>Suosikit</button>
+    </section>
+
+    <section class="live-map-card-v38">
+      <div class="map-canvas-v38">
+        <span class="water w1"></span><span class="water w2"></span><span class="water w3"></span>
+        <button class="marker m-home"><b>🏠</b><small>Vääksy</small></button>
+        <button class="marker m-nature"><b>📍</b><small>Pulkkilanharju</small></button>
+        <button class="marker m-food"><b>☕</b><small>Kahvila</small></button>
+        <button class="marker m-camp"><b>🏕️</b><small>Leirintä</small></button>
+        <button class="marker m-view"><b>⭐</b><small>Nähtävyys</small></button>
+      </div>
+      <div class="map-actions-v38">
+        <button>📍 Näytä sijaintini</button>
+        <button>➕ Lisää paikka</button>
+      </div>
+    </section>
+
+    <section class="section-title"><h2>Suodattimet</h2><button>Tyhjennä</button></section>
+    <div class="filter-chips-v38">
+      <button class="active">Kaikki</button>
+      <button>📷 Kuvat</button>
+      <button>☕ Kahvilat</button>
+      <button>🏕️ Yöpyminen</button>
+      <button>❤️ Suosikit</button>
+    </div>
+
+    <section class="section-title"><h2>Lähellä kartalla</h2><button>Näytä kaikki ›</button></section>
+    <div class="place-list-v38">
+      <button><span class="thumb lake-thumb"></span><div><b>Pulkkilanharju</b><small>Luontokohde · 6 km · ★ 4,8</small></div><em>›</em></button>
+      <button><span class="thumb coffee-thumb"></span><div><b>Kahvila Kanavan Helmi</b><small>Kahvila · 2 km · ★ 4,6</small></div><em>›</em></button>
+      <button><span class="thumb camp-thumb"></span><div><b>Leirintäalue</b><small>Yöpyminen · 11 km · ★ 4,5</small></div><em>›</em></button>
+    </div>
+
+    <section class="bongaus-card-v38" onclick="location.href='paijat-hame.html'">
+      <div>
+        <small>Kuntabongaus omalla sivulla</small>
+        <h2>Päijät-Häme</h2>
+        <p>3 / 14 kuntaa merkitty käydyksi</p>
+        <div class="bar"><span style="width:21%"></span></div>
+      </div>
+      <b>21%</b>
+    </section>
+
+    <div class="bottom-space"></div>
+  </main>
+
+  <nav class="bottomnav">
+    <button onclick="go('home')">🏠<span>Etusivu</span></button>
+    <button class="active" onclick="go('map')">🗺️<span>Kartta</span></button>
+    <button class="center" onclick="go('newTrip')">＋</button>
+    <button onclick="go('diary')">📖<span>Päiväkirja</span></button>
+    <button onclick="go('profile')">👤<span>Minä</span></button>
+  </nav>
+</div>
+<script src="data.js"></script><script src="sovellus.js"></script>
+</body>
+</html>
