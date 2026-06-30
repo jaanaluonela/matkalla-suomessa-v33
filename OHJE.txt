@@ -1,1 +1,1 @@
-V5.0: suuri sovellusmainen etusivu. Lataa kaikki tämän kansion tiedostot GitHubiin vanhojen päälle.
+Pura ZIP. Lataa GitHubiin vain tämän kansion sisällä olevat tiedostot. Älä lataa ZIP-tiedostoa repojuureen.
