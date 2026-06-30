@@ -1,1 +1,1 @@
-const APP_VERSION = 'v6.0-valmis-runko';
+const MATKALLA_DATA={version:'v61-premium-valmis',visited:5,regions:19};

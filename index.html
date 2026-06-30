@@ -1,12 +1,67 @@
-<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Matkalla Suomessa</title><link rel="stylesheet" href="tyylit.css"></head><body><div class="phone">
-<header class="topbar"><div class="brand"><span>🚐</span><b>Matkalla<br>Suomessa</b></div><a class="iconbtn" href="#haku">🔍</a></header>
-<section class="hero"><div class="hero-actions"><button class="iconbtn">☰</button><div class="hero-right"><button class="iconbtn">🔔</button><button class="iconbtn">♡</button></div></div><div class="logohero"><div class="script">Matkalla</div><div class="wide">SUOMESSA</div><p>Koe. Tutustu. Muista.</p></div></section>
-<div id="haku" class="searchBox"><span>🔍</span><span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></div>
-<nav class="quick"><a class="quick-card" href="kartta.html"><span class="badge">🇫🇮</span><div><h2>Avaa kartta</h2><p>Tutustu Suomeen maakunta kerrallaan</p></div><span class="arrow">›</span></a><a class="quick-card" href="paivakirja.html"><span class="badge">＋</span><div><h2>Lisää matka</h2><p>Tallenna uusi kohde ja muistot</p></div><span class="arrow">›</span></a></nav>
-<section class="section"><div class="section-head"><h2>Jatka matkaa</h2><a href="kartta.html">Näytä kaikki ›</a></div><article class="trip-card"><div class="photo"></div><div class="body"><span class="eyebrow">Viimeisin matka</span><h3>Päijät-Häme</h3><p>Asikkala – Vääksy – Pulkkilanharju</p><div class="bar"><i></i></div><div class="progress-row"><b>Käyty kunnista 5 / 8</b><b>63%</b></div></div></article></section>
-<section class="section"><div class="section-head"><h2>Suosikit</h2><a href="profiili.html">Näytä kaikki ›</a></div><div class="hscroll"><div class="fav" style="background-image:url('https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=500&q=80')"><span class="heart">♥</span><div class="txt"><b>Häme</b><small>5 kohdetta</small></div></div><div class="fav" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80')"><span class="heart">♥</span><div class="txt"><b>Päijänne</b><small>2 kohdetta</small></div></div><div class="fav" style="background-image:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=500&q=80')"><span class="heart">♥</span><div class="txt"><b>Varsinais-Suomi</b><small>3 kohdetta</small></div></div><div class="fav" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80')"><span class="heart">♥</span><div class="txt"><b>Lappi</b><small>1 kohde</small></div></div></div></section>
-<section class="section"><div class="section-head"><h2>Karavaanarin vinkit</h2><a href="kartta.html">Kartalla ›</a></div><div class="tips"><div class="tip"><div class="ticon">🚐</div><b>Leirintä- alueet</b><small>12 kohdetta</small></div><div class="tip"><div class="ticon">🅿️</div><b>Matka- parkit</b><small>Yöpymispaikat</small></div><div class="tip"><div class="ticon">🍴</div><b>Ravintolat</b><small>Paikalliset</small></div><div class="tip"><div class="ticon">⛽</div><b>Huolto</b><small>Palvelupisteet</small></div></div></section>
-<section class="section"><div class="section-head"><h2>Lähellä sinua</h2><a href="kartta.html">Avaa kartta ›</a></div><div class="near-list"><div class="near"><div><b>📍 Pulkkilanharju</b><span>Luontokohde ja maisematie</span></div><b class="dist">6 km</b></div><div class="near"><div><b>☕ Kahvila</b><span>Tauko ja herkkuhetki</span></div><b class="dist">2 km</b></div><div class="near"><div><b>🏕️ Leirintäalue</b><span>Yöpyminen veden äärellä</span></div><b class="dist">11 km</b></div></div></section>
-<div class="promo"><small>UUSI SELKEÄ MUUTOS</small><h2>Matkakartta uudistui</h2><p>Kartalla näkyvät nyt matkakohteet, suosikit ja lähellä olevat paikat.</p><a class="pill" href="kartta.html">Katso kartta ›</a></div>
-<nav class="bottomnav"><a href="index.html"><span>🏠</span>Etusivu</a><a href="kartta.html"><span>🗺️</span>Kartta</a><a href="paivakirja.html"><span class="plus">+</span></a><a href="paivakirja.html"><span>📖</span>Päiväkirja</a><a href="profiili.html"><span>👤</span>Minä</a></nav>
-</div><script src="data.js"></script><script src="sovellus.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matkalla Suomessa</title>
+  <link rel="stylesheet" href="tyylit.css" />
+</head>
+<body>
+  <div class="app">
+    <section class="hero premium-hero">
+      <div class="hero-bg"></div>
+      <div class="hero-top">
+        <button class="round">☰</button>
+        <div class="top-actions"><button class="round">🔔<span></span></button><button class="round">♡</button></div>
+      </div>
+      <div class="brand-big">
+        <div class="script">Matkalla</div>
+        <div class="spaced">SUOMESSA</div>
+        <p>Koe. Tutustu. Muista.</p>
+      </div>
+      <div class="search-pill">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></div>
+    </section>
+
+    <main class="content raised">
+      <div class="quick-grid">
+        <a class="quick-card" href="kartta.html"><span class="icon finland">🇫🇮</span><h2>Avaa kartta</h2><p>Tutustu Suomeen maakunta kerrallaan</p><b>›</b></a>
+        <a class="quick-card" href="paivakirja.html"><span class="icon plus">＋</span><h2>Lisää matka</h2><p>Tallenna uusi kohde ja muistot</p><b>›</b></a>
+        <a class="quick-card small" href="#suosikit"><span>❤️</span><strong>Suosikit</strong></a>
+        <a class="quick-card small" href="#lahella"><span>📍</span><strong>Lähellä</strong></a>
+      </div>
+
+      <section class="section-head"><h1>Jatka matkaa</h1><a href="paijat-hame.html">Näytä kaikki ›</a></section>
+      <a class="continue-card" href="paijat-hame.html">
+        <div class="continue-photo"></div>
+        <div class="continue-info"><small>Viimeisin matka</small><h2>Päijät-Häme</h2><p>Asikkala – Vääksy – Pulkkilanharju</p><div class="progress"><i></i></div><div class="progress-text"><span>Käyty kunnista 5 / 8</span><b>63%</b></div></div>
+      </a>
+
+      <section id="suosikit" class="section-head"><h1>Suosikit</h1><a>Näytä kaikki ›</a></section>
+      <div class="cards-row">
+        <div class="photo-card c1"><button>♥</button><h3>Häme</h3><p>5 kohdetta</p></div>
+        <div class="photo-card c2"><button>♥</button><h3>Varsinais-Suomi</h3><p>3 kohdetta</p></div>
+        <div class="photo-card c3"><button>♥</button><h3>Päijänne</h3><p>2 kohdetta</p></div>
+        <div class="photo-card c4"><button>♥</button><h3>Lappi</h3><p>1 kohde</p></div>
+      </div>
+
+      <section class="section-head"><h1>Karavaanarin vinkit</h1><a>Kartalla ›</a></section>
+      <div class="tips-grid">
+        <a class="tip"><span>🚐</span><h3>Leirintäalueet</h3><p>12 paikkaa</p></a>
+        <a class="tip"><span>🚿</span><h3>Palvelupisteet</h3><p>Huolto ja vesi</p></a>
+        <a class="tip"><span>🅿️</span><h3>Pysäköinti</h3><p>Yöpymispaikat</p></a>
+        <a class="tip"><span>🍴</span><h3>Ravintolat</h3><p>Paikalliset löydöt</p></a>
+      </div>
+
+      <section id="lahella" class="section-head"><h1>Lähellä sinua</h1><a href="kartta.html">Kartalla ›</a></section>
+      <div class="near-list">
+        <a>📍 <div><b>Pulkkilanharju</b><span>Luontokohde · 6 km</span></div></a>
+        <a>☕ <div><b>Kahvila</b><span>Tauko ja herkkuhetki · 2 km</span></div></a>
+        <a>🏕️ <div><b>Leirintäalue</b><span>Yöpyminen · 11 km</span></div></a>
+      </div>
+    </main>
+
+    <nav class="bottom-nav"><a class="active">🏠<span>Etusivu</span></a><a href="kartta.html">🗺️<span>Kartta</span></a><button onclick="location.href='paivakirja.html'">＋</button><a href="paivakirja.html">📖<span>Päiväkirja</span></a><a href="profiili.html">👤<span>Minä</span></a></nav>
+  </div>
+  <script src="data.js"></script><script src="sovellus.js"></script>
+</body>
+</html>
