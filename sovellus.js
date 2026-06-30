@@ -34,29 +34,51 @@ function openRegion(id){ location.hash = 'region-' + id; route(); }
 
 function renderHome(){
   setActive('home');
-  const visited = totalVisited();
-  const total = MS_REGIONS.reduce((s,r)=>s+r.total,0);
   const st = state();
   const lastRegion = MS_REGIONS.find(r=>r.id==='paijat-hame') || MS_REGIONS[0];
+  const favs = [
+    {title:'Päijänne', sub:'Järvimaisemat', icon:'🌅'},
+    {title:'Häme', sub:'Linnat ja kylät', icon:'🏰'},
+    {title:'Lappi', sub:'Ruska ja tunturit', icon:'🌌'},
+    {title:'Saaristo', sub:'Satamat ja meri', icon:'⚓'}
+  ];
   view.innerHTML = `
-    <section class="hero premium-hero">
-      <button class="round left">☰</button><button class="round right" onclick="go('profile')">♡</button>
-      <div class="hero-text"><div class="script-title">Matkalla</div><div class="hero-main">SUOMESSA</div><p>Koe. Tutustu. Muista.</p></div>
+    <section class="hero hero-v34">
+      <button class="round left">☰</button>
+      <button class="round notify" title="Ilmoitukset">🔔<i></i></button>
+      <button class="round right" onclick="go('profile')">♡</button>
+      <div class="camper-badge">🚐</div>
+      <div class="hero-text v34-title"><div class="script-title">Matkalla</div><div class="hero-main">SUOMESSA</div><p>Koe. Tutustu. Muista.</p></div>
     </section>
-    <button class="searchbar" onclick="showSearch()">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></button>
-    <section class="stats-card three"><div><strong>${visited}</strong><span>Käytyä</span></div><div><strong>${total}</strong><span>Kuntaa</span></div><div><strong>19</strong><span>Maakuntaa</span></div></section>
-    <section class="section-head"><h2>Lisää tietoja matkaasi</h2><button onclick="go('newTrip')">Näytä lisää ›</button></section>
-    <div class="action-grid scroll-x">
-      ${actionCard('📷','Kuvat','Lisää kuva')}${actionCard('📍','Sijainti','Tallenna paikka')}${actionCard('📝','Muistiinpano','Kirjoita muisto')}${actionCard('❤️','Suosikiksi','Tallenna kohde')}${actionCard('⭐','Arvio','Anna oma arvio')}${actionCard('🍽️','Ravintola','Ruokapaikka')}${actionCard('☕','Kahvila','Kahvihetki')}${actionCard('🏕️','Leirintäalue','Yöpyminen')}
+    <button class="searchbar search-v34" onclick="showSearch()">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></button>
+
+    <div class="quick-actions">
+      <button class="quick-card" onclick="go('map')"><span class="quick-icon mapshape">🇫🇮</span><b>Avaa kartta</b><small>Tutustu Suomeen maakunta kerrallaan</small><em>›</em></button>
+      <button class="quick-card" onclick="go('newTrip')"><span class="quick-icon plusicon">＋</span><b>Lisää matka</b><small>Tallenna uusi kohde ja muistot</small><em>›</em></button>
     </div>
-    <section class="section-head"><h2>Lähellä sinua</h2><button onclick="showSearch()">Haku ›</button></section>
-    <div class="near-list">${MS_PLACES.map(p=>`<button class="near-card"><b>${p.icon} ${p.name}</b><span>${p.type} · ${p.distance}</span></button>`).join('')}</div>
+
     <section class="section-head"><h2>Jatka matkaa</h2><button onclick="openRegion('${lastRegion.id}')">Näytä kaikki ›</button></section>
-    <button class="continue-card" onclick="openRegion('${lastRegion.id}')"><div class="continue-img">🌅</div><div><span>Viimeisin maakunta</span><h3>${lastRegion.name}</h3><p>${lastRegion.route}</p><div class="bar"><i style="width:${percent(regionVisitedCount(lastRegion), lastRegion.total)}%"></i></div><small>${regionVisitedCount(lastRegion)}/${lastRegion.total} kuntaa · ${percent(regionVisitedCount(lastRegion), lastRegion.total)}%</small></div></button>
+    <button class="continue-card premium-continue" onclick="openRegion('${lastRegion.id}')">
+      <div class="continue-img campfire">🔥</div>
+      <div><span>Viimeisin matka</span><h3>${lastRegion.name}</h3><p>${lastRegion.route}</p><div class="bar"><i style="width:${percent(regionVisitedCount(lastRegion), lastRegion.total)}%"></i></div><small>Käyty kunnista ${regionVisitedCount(lastRegion)} / ${lastRegion.total}</small></div>
+    </button>
+
+    <section class="section-head"><h2>Suosikit</h2><button onclick="go('profile')">Näytä kaikki ›</button></section>
+    <div class="favorite-row">${favs.map(f=>favoriteCard(f)).join('')}</div>
+
+    <section class="section-head"><h2>Lähellä sinua</h2><button onclick="showSearch()">Haku ›</button></section>
+    <div class="near-list near-v34">${MS_PLACES.map(p=>`<button class="near-card"><b>${p.icon} ${p.name}</b><span>${p.type} · ${p.distance}</span></button>`).join('')}</div>
+
+    <section class="section-head"><h2>Lisää tietoja matkaasi</h2><button onclick="go('newTrip')">Näytä lisää ›</button></section>
+    <div class="action-grid scroll-x action-v34">
+      ${actionCard('📷','Kuva','Lisää kuva')}${actionCard('📍','Sijainti','Tallenna paikka')}${actionCard('📝','Muistiinpano','Kirjoita muisto')}${actionCard('❤️','Suosikiksi','Tallenna kohde')}${actionCard('⭐','Arvio','Anna oma arvio')}${actionCard('🍽️','Ravintola','Ruokapaikka')}${actionCard('☕','Kahvila','Kahvihetki')}${actionCard('🏕️','Leirintä','Yöpyminen')}
+    </div>
+
     <section class="section-head"><h2>Viimeisimmät matkat</h2><button onclick="go('trips')">Katso kaikki ›</button></section>
     <div class="trip-row">${st.trips.map(t=>tripCard(t)).join('')}</div>
   `;
 }
+function favoriteCard(f){ return `<article class="favorite-card"><div class="fav-photo">${f.icon}<button>♡</button></div><b>${f.title}</b><span>${f.sub}</span></article>`; }
 function actionCard(icon,title,sub=''){ return `<button class="action-card"><span>${icon}</span><b>${title}</b><small>${sub}</small></button>`; }
 function tripCard(t){ return `<article class="trip-card"><div class="photo">${t.icon||'📍'}<button>♡</button></div><div><small>${t.date}</small><b>${t.title}</b><span>${t.place}</span></div></article>`; }
 

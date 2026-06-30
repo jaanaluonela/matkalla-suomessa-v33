@@ -1,6 +1,6 @@
-V33 Premium etusivu + kartta
+V34 Premium etusivu
 
-Käytä vain näitä tiedostoja:
+Tiedostot:
 - index.html
 - kartta.html
 - paijat-hame.html
@@ -10,11 +10,13 @@ Käytä vain näitä tiedostoja:
 - sovellus.js
 - tyylit.css
 
-Poista GitHubista vanhat ylimääräiset:
-- app.js
-- styles.css
-- script.js
-- tyyli.css
-- tyylit.css.css
+Päivityksen idea:
+- etusivulta poistettu kuntabongauslaskurit
+- uusi modernimpi hero-näkymä
+- Avaa kartta ja Lisää matka -pikakortit
+- Jatka matkaa -kortti
+- Suosikit-osio
+- Lähellä sinua -osio
+- Lisää kuva, sijainti ja muistiinpano -toiminnot näkyvät omassa osiossa
 
-Avaa ensin index.html selaimessa. Jos toimii, lataa GitHubiin ja tee Commit changes.
+Kuntabongaus pysyy kartta/profiili-sivuilla eikä ole etusivun pääsisältö.
