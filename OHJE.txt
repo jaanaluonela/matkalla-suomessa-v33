@@ -1,2 +1,1 @@
-V40 SUURI ETUSIVU
-Pura ZIP ja lataa kaikki tiedostot GitHubiin matkalla-suomessa-v33 repositorioon vanhojen päälle.
+V5.0: suuri sovellusmainen etusivu. Lataa kaikki tämän kansion tiedostot GitHubiin vanhojen päälle.

@@ -1,1 +1,1 @@
-window.MATKALLA_DATA={version:'v40',municipalities:309,regions:19};
+const APP_VERSION = 'v5.0 suuri sovellusmainen etusivu';
