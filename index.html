@@ -1,27 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Matkalla Suomessa</title>
   <link rel="stylesheet" href="tyylit.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <header class="topbar">
-      <div class="brand"><span class="logo">🚌</span><span>Matkalla<br>Suomessa</span></div>
-      <button class="icon" onclick="showSearch()" title="Haku">🔍</button>
+  <div class="app">
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="toprow">
+        <button class="round">☰</button>
+        <div class="top-actions"><button class="round bell">🔔</button><button class="round">♡</button></div>
+      </div>
+      <div class="brand-hero">
+        <div class="script">Matkalla</div>
+        <div class="wide">SUOMESSA</div>
+        <p>Koe. Tutustu. Muista.</p>
+      </div>
+      <button class="search" onclick="showSearch()">🔍 Hae kuntaa, paikkaa tai nähtävyyttä...</button>
     </header>
-    <main id="view"></main>
+
+    <main class="content home-content">
+      <section class="quick-grid">
+        <button class="quick-card" onclick="go('map')"><span class="icon fin">🇫🇮</span><b>Avaa kartta</b><small>Tutustu Suomeen maakunta kerrallaan</small><em>›</em></button>
+        <button class="quick-card" onclick="go('newTrip')"><span class="icon plus">＋</span><b>Lisää matka</b><small>Tallenna uusi kohde ja muistot</small><em>›</em></button>
+      </section>
+
+      <section class="section-title"><h2>Jatka matkaa</h2><button>Näytä kaikki ›</button></section>
+      <article class="continue-card">
+        <div class="continue-img"></div>
+        <div class="continue-body"><small>Viimeisin matka</small><h3>Päijät-Häme</h3><p>Asikkala – Vääksy – Pulkkilanharju</p><div class="bar"><span style="width:63%"></span></div><div class="row"><span>Käyty kunnista 5 / 8</span><b>63%</b></div></div>
+      </article>
+
+      <section class="section-title"><h2>Suosikit</h2><button>Näytä kaikki ›</button></section>
+      <div class="favorite-row">
+        <article class="fav castle"><button>♥</button><b>Häme</b><span>5 kohdetta</span></article>
+        <article class="fav coast"><button>♥</button><b>Varsinais-Suomi</b><span>3 kohdetta</span></article>
+        <article class="fav lake"><button>♥</button><b>Päijänne</b><span>2 kohdetta</span></article>
+        <article class="fav north"><button>♥</button><b>Lappi</b><span>1 kohde</span></article>
+      </div>
+
+      <section class="section-title"><h2>Lisää tietoja matkaasi</h2><button>Näytä lisää ˅</button></section>
+      <div class="tool-grid">
+        <button>📷<span>Kuvat</span></button><button>📍<span>Sijainti</span></button><button>📝<span>Muistiinpano</span></button><button>⭐<span>Arvio</span></button>
+      </div>
+
+      <section class="section-title"><h2>Lähellä sinua</h2><button>Kartalla ›</button></section>
+      <div class="near-list">
+        <button><b>📍 Pulkkilanharju</b><span>Luontokohde · 6 km</span></button>
+        <button><b>☕ Kahvila</b><span>Tauko ja herkkuhetki · 2 km</span></button>
+        <button><b>🏕️ Leirintäalue</b><span>Yöpyminen · 11 km</span></button>
+      </div>
+    </main>
+
     <nav class="bottomnav">
-      <button data-nav="home" onclick="go('home')">🏠<span>Etusivu</span></button>
-      <button data-nav="map" onclick="go('map')">🗺️<span>Kartta</span></button>
-      <button class="plus" onclick="go('newTrip')">＋</button>
-      <button data-nav="trips" onclick="go('trips')">📖<span>Päiväkirja</span></button>
-      <button data-nav="profile" onclick="go('profile')">👤<span>Minä</span></button>
+      <button class="active" onclick="go('home')">🏠<span>Etusivu</span></button>
+      <button onclick="go('map')">🗺️<span>Kartta</span></button>
+      <button class="center" onclick="go('newTrip')">＋</button>
+      <button onclick="go('diary')">📖<span>Päiväkirja</span></button>
+      <button onclick="go('profile')">👤<span>Minä</span></button>
     </nav>
   </div>
-  <script src="data.js"></script>
-  <script src="sovellus.js"></script>
+  <script src="data.js"></script><script src="sovellus.js"></script>
 </body>
 </html>
