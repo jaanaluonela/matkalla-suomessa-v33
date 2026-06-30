@@ -1,1 +1,1 @@
-const APP_VERSION = 'v5.0 suuri sovellusmainen etusivu';
+const APP_VERSION = 'v6.0-valmis-runko';
