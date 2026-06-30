@@ -1,0 +1,20 @@
+V33 Premium etusivu + kartta
+
+Käytä vain näitä tiedostoja:
+- index.html
+- kartta.html
+- paijat-hame.html
+- paivakirja.html
+- profiili.html
+- data.js
+- sovellus.js
+- tyylit.css
+
+Poista GitHubista vanhat ylimääräiset:
+- app.js
+- styles.css
+- script.js
+- tyyli.css
+- tyylit.css.css
+
+Avaa ensin index.html selaimessa. Jos toimii, lataa GitHubiin ja tee Commit changes.
