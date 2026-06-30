@@ -1,1 +1,1 @@
-// Matkalla Suomessa v22 – app placeholder
+console.log('Matkalla Suomessa v24');

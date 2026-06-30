@@ -1,2 +1,6 @@
-Pura ZIP ja lataa GitHubiin vain tämän kansion sisällä olevat tiedostot.
-Älä lataa itse ZIP-tiedostoa.
+Lataa GitHubiin nämä tiedostot ZIPin sisältä, ei itse ZIP-tiedostoa.
+Päivitys v24:
+- Suomen näköisempi karttasivu
+- Etusivu lähemmäs mallia
+- Suosikit ja karavaanarin vinkit ruudukossa
+- Kaunokirjoituslogo ja sydän
