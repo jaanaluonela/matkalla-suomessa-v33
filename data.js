@@ -1,1 +1,1 @@
-// Matkalla Suomessa v22 – data placeholder
+// Matkalla Suomessa data placeholder
