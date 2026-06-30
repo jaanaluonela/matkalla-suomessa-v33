@@ -1,7 +1,1 @@
-V6.0 VALMIS RUNKO
-1. Pura ZIP.
-2. Lataa GitHubiin vain tämän kansion SISÄLLÄ olevat tiedostot.
-3. Älä lataa itse ZIP-tiedostoa.
-4. Paina Commit changes vain kerran.
-5. Odota, että github-pages on vihreä.
-6. Avaa: https://jaanaluonela.github.io/matkalla-suomessa-v33/?v=60
+V5.0: suuri sovellusmainen etusivu. Lataa kaikki tämän kansion tiedostot GitHubiin vanhojen päälle.

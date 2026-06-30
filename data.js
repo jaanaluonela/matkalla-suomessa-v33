@@ -1,1 +1,1 @@
-const MATKALLA_DATA={version:'v61-premium-valmis',visited:5,regions:19};
+const APP_VERSION = 'v5.0 suuri sovellusmainen etusivu';
