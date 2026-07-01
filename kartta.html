@@ -9,8 +9,18 @@
 <body>
 <div class="app">
 <header class="hero small map-hero">
-  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><div><div class="logo-script">Suomen kartta ♡</div><div class="logo-sub">Maakunnat ja kunnat</div></div><button class="icon-btn">🔍</button></div>
-  <div class="hero-title"><h1>Minun Suomeni</h1><p>Valitse maakunta tai kunta. Käydyt paikat värittyvät vihreäksi.</p></div>
+  <div class="toprow">
+    <button class="icon-btn" onclick="history.back()">‹</button>
+    <div>
+      <div class="logo-script">Suomen kartta ♡</div>
+      <div class="logo-sub">Maakunnat ja kunnat</div>
+    </div>
+    <button class="icon-btn">🔍</button>
+  </div>
+  <div class="hero-title">
+    <h1>Minun Suomeni</h1>
+    <p>Valitse maakunta. Käydyt alueet värittyvät myöhemmin vihreäksi.</p>
+  </div>
 </header>
 <main class="content">
   <section class="kpi">
@@ -19,30 +29,42 @@
     <div><b>308</b><span class="muted">kuntaa</span></div>
   </section>
 
-  <section class="section mapbox">
+  <section class="section real-map-section">
     <div class="section-head"><h2>Avaa kartta</h2><a class="more" href="paijat-hame.html">Päijät-Häme ›</a></div>
     <div class="tabs"><button class="tab active">Kaikki</button><button class="tab">Käydyt</button><button class="tab">Haluan käydä</button><button class="tab">Suosikit</button></div>
-    <div class="finmap improved-map" aria-label="Suomen kartta">
-      <div class="finland-shape"></div>
-      <a class="region r-lappi" href="#"><span>Lappi</span></a>
-      <a class="region r-pohjois-pohjanmaa" href="#"><span>Pohjois-Pohjanmaa</span></a>
-      <a class="region r-kainuu" href="#"><span>Kainuu</span></a>
-      <a class="region r-keski-suomi" href="#"><span>Keski-Suomi</span></a>
-      <a class="region r-pirkanmaa" href="#"><span>Pirkanmaa</span></a>
-      <a class="region r-paijat done" href="paijat-hame.html"><span>Päijät-Häme</span></a>
-      <a class="region r-uusimaa" href="#"><span>Uusimaa</span></a>
-      <a class="region r-varsinais" href="#"><span>Varsinais-Suomi</span></a>
-      <a class="region r-ahvenanmaa" href="#"><span>Ahvenanmaa</span></a>
+
+    <div class="real-finland-map" aria-label="Suomen maakuntakartta">
+      <img class="real-finland-img" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Finland_Regions_Map.svg" alt="Suomen maakunnat kartalla">
+      <a class="map-label label-lappi" href="#">Lappi</a>
+      <a class="map-label label-pohjois-pohjanmaa" href="#">Pohjois-Pohjanmaa</a>
+      <a class="map-label label-kainuu" href="#">Kainuu</a>
+      <a class="map-label label-keski-pohjanmaa" href="#">Keski-Pohjanmaa</a>
+      <a class="map-label label-pohjanmaa" href="#">Pohjanmaa</a>
+      <a class="map-label label-pohjois-savo" href="#">Pohjois-Savo</a>
+      <a class="map-label label-pohjois-karjala" href="#">Pohjois-Karjala</a>
+      <a class="map-label label-etela-pohjanmaa" href="#">Etelä-Pohjanmaa</a>
+      <a class="map-label label-keski-suomi" href="#">Keski-Suomi</a>
+      <a class="map-label label-etela-savo" href="#">Etelä-Savo</a>
+      <a class="map-label label-etela-karjala" href="#">Etelä-Karjala</a>
+      <a class="map-label label-pirkanmaa" href="#">Pirkanmaa</a>
+      <a class="map-label label-satakunta" href="#">Satakunta</a>
+      <a class="map-label label-kanta-hame" href="#">Kanta-Häme</a>
+      <a class="map-label label-paijat-hame active-region" href="paijat-hame.html">Päijät-Häme</a>
+      <a class="map-label label-kymenlaakso" href="#">Kymenlaakso</a>
+      <a class="map-label label-uusimaa" href="#">Uusimaa</a>
+      <a class="map-label label-varsinais" href="#">Varsinais-Suomi</a>
+      <a class="map-label label-ahvenanmaa" href="#">Ahvenanmaa</a>
     </div>
-    <p class="muted map-note">Kartta on valmiina käyttölogiikkaan: maakunta avaa maakuntasivun, kunta avaa kunnan sivun ja käydyt kohteet näkyvät vihreinä.</p>
+
+    <p class="muted map-note">Karttapohjana on oikea Suomen maakuntakartta. Tässä vaiheessa Päijät-Häme avaa maakuntasivun; muut maakunnat kytketään omille sivuilleen seuraavissa päivityksissä.</p>
   </section>
 
   <section class="section">
     <div class="section-head"><h2>Maakunnat</h2></div>
     <div class="list compact-list">
       <a class="card row" href="paijat-hame.html"><div class="round done-dot">✓</div><div><b>Päijät-Häme</b><div class="muted">Asikkala, Lahti, Heinola…</div></div><span class="row-chev">›</span></a>
-      <a class="card row" href="#"><div class="round">📍</div><div><b>Kanta-Häme</b><div class="muted">Forssa, Hattula, Hämeenlinna…</div></div><span class="row-chev">›</span></a>
       <a class="card row" href="#"><div class="round">📍</div><div><b>Uusimaa</b><div class="muted">Helsinki, Porvoo, Raasepori…</div></div><span class="row-chev">›</span></a>
+      <a class="card row" href="#"><div class="round">📍</div><div><b>Lappi</b><div class="muted">Rovaniemi, Inari, Utsjoki…</div></div><span class="row-chev">›</span></a>
     </div>
   </section>
 </main>

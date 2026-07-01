@@ -7,87 +7,43 @@
   <link rel="stylesheet" href="tyylit.css">
 </head>
 <body>
-<div class="app city-app">
+<div class="app">
 
-<header class="lahti-model-hero">
-  <div class="city-top-actions">
-    <button class="round-control" onclick="history.back()">‹</button>
-    <div class="right-controls"><button class="round-control">♡</button><button class="round-control">•••</button></div>
-  </div>
-  <div class="lahti-title-wrap">
-    <div class="coat lahti-coat" aria-label="Lahden vaakuna">
-      <svg viewBox="0 0 64 64" role="img" aria-hidden="true"><path d="M8 10h48v26c0 13-10 22-24 28C18 58 8 49 8 36V10z" fill="#137342"/><path d="M15 18h34v18c0 9-7 15-17 20-10-5-17-11-17-20V18z" fill="#16844b" stroke="#fff" stroke-width="2"/><path d="M32 17v28" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M23 28h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M19 43c5-6 11-6 15 0 4-6 9-6 14 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
-    </div>
-    <h1>Lahti</h1>
-    <p>Eläväinen kaupunki Vesijärven rannoilla Päijät-Hämeessä. <span>💙</span></p>
-  </div>
+<header class="city-hero" style="background-image:linear-gradient(180deg,rgba(7,28,22,.08),rgba(7,28,22,.72)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85')">
+  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><div></div><button class="icon-btn">♡</button></div>
+  <div class="city-title"><div class="city-crest">⚜</div><h1>Lahti</h1><p>Eläväinen kaupunki Vesijärven rannoilla Päijät-Hämeessä. 💙</p></div>
 </header>
-
-<main class="model-city-content">
-  <section class="model-intro-card">
-    <div class="intro-icon">🌿</div>
-    <p>Lahti on tunnettu urheilukaupungista, upeasta järviluonnostaan, tapahtumistaan ja monipuolisista palveluistaan. Tervetuloa kokemaan Vesijärven kauneus ja Lahden syke!</p>
-  </section>
-
-  <section class="model-service-grid">
-    <a class="model-service" href="#"><span>🚐</span><b>Matkaparkit</b></a>
-    <a class="model-service" href="#"><span>⛺</span><b>Leirintäalueet</b></a>
-    <a class="model-service" href="#"><span>🛏️</span><b>Majoitus</b></a>
-    <a class="model-service" href="#"><span>🍴</span><b>Ravintolat</b></a>
-    <a class="model-service" href="#"><span>☕</span><b>Kahvilat</b></a>
-    <a class="model-service" href="#"><span>🏛️</span><b>Nähtävyydet</b></a>
-    <a class="model-service" href="#"><span>🎭</span><b>Tekemistä<br>& tapahtumat</b></a>
-    <a class="model-service" href="#map-lahti"><span>🗺️</span><b>Kartta<br>Lahdessa</b></a>
-  </section>
-
-  <section class="model-section">
-    <div class="model-section-head"><h2>Suosituimmat kohteet Lahdessa</h2><a href="#">Näytä kaikki ›</a></div>
-    <div class="model-card-row">
-      <article class="model-place"><div class="place-img" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80')"><button>♡</button></div><div class="place-text"><b>Lahden satama</b><small><span>★</span> 4,7 (128)</small></div></article>
-      <article class="model-place"><div class="place-img" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=80')"><button>♡</button></div><div class="place-text"><b>Sibeliustalo</b><small><span>★</span> 4,8 (92)</small></div></article>
-      <article class="model-place"><div class="place-img" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80')"><button>♡</button></div><div class="place-text"><b>Hyppyrimäet</b><small><span>★</span> 4,6 (77)</small></div></article>
-      <article class="model-place"><div class="place-img" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80')"><button>♡</button></div><div class="place-text"><b>Mukkulan uimaranta</b><small><span>★</span> 4,5 (64)</small></div></article>
+<main class="content">
+  <section class="city-note"><div class="round">🌿</div><p>Lahti on tunnettu urheilukaupungista, upeasta järviluonnostaan, tapahtumistaan ja monipuolisista palveluistaan.</p></section>
+  <section class="section">
+    <div class="section-head"><h2>Palvelut Lahdessa</h2></div>
+    <div class="grid2">
+      <div class="tile"><div class="emoji">📍</div><b>Nähtävyydet</b><small>Kanava, satama, luonto</small></div>
+      <div class="tile"><div class="emoji">🍽️</div><b>Ravintolat</b><small>Ruokapaikat ja terassit</small></div>
+      <div class="tile"><div class="emoji">☕</div><b>Kahvilat</b><small>Reissun tauot</small></div>
+      <div class="tile"><div class="emoji">🏕️</div><b>Leirintäalueet</b><small>Yöpyminen</small></div>
+      <div class="tile"><div class="emoji">🅿️</div><b>Matkaparkit</b><small>Pysähdy ja yövy</small></div>
+      <div class="tile"><div class="emoji">💧</div><b>Huoltopisteet</b><small>Huolto matkalla</small></div>
+            <div class="tile"><div class="emoji">🛒</div><b>Kaupat</b><small>Ruoka ja tarvikkeet</small></div>
+      <div class="tile"><div class="emoji">💊</div><b>Apteekki</b><small>Tarvittaessa lähellä</small></div>
+      <div class="tile"><div class="emoji">🏖️</div><b>Uimarannat</b><small>Kesäpäivään</small></div>
     </div>
   </section>
-
-  <section class="model-section">
-    <div class="model-section-head"><h2>Sinun muistosi Lahdesta</h2><a href="#">Näytä kaikki ›</a></div>
-    <div class="model-memory-row">
-      <div class="model-memory" style="background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=420&q=80')"><span>Auringonlasku</span></div>
-      <div class="model-memory" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=420&q=80')"><span>Kahvi Malskilla</span></div>
-      <div class="model-memory" style="background-image:url('https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=420&q=80')"><span>Sibeliustalo</span></div>
-      <div class="model-memory" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=420&q=80')"><span>Iltakävely satamassa</span></div>
-      <a class="model-add-memory" href="uusi-matka.html"><b>＋</b><span>Lisää<br>muisto</span></a>
+  <section class="section">
+    <div class="section-head"><h2>Suosituimmat kohteet Lahdessa</h2><a class="more">Näytä kaikki ›</a></div>
+    <div class="h-scroll">
+      <div class="place-card" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80')"><span>♡</span><b>Lahden satama</b><small>★ 4,7 (128)</small></div>
+      <div class="place-card" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=80')"><span>♡</span><b>Sibeliustalo</b><small>★ 4,8 (92)</small></div>
+      <div class="place-card" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80')"><span>♡</span><b>Hyppyrimäet</b><small>★ 4,6 (77)</small></div>
     </div>
   </section>
-
-  <section class="model-section" id="map-lahti">
-    <h2>Kartta Lahdessa</h2>
-    <div class="lahti-map-card">
-      <div class="map-bg-label">Vesijärvi</div>
-      <span class="map-pin pin-camp">⛺</span>
-      <span class="map-pin pin-camp two">⛺</span>
-      <span class="map-pin pin-bed">🛏️</span>
-      <span class="map-pin pin-food">🍴</span>
-      <span class="map-pin pin-food two">🍴</span>
-      <span class="map-pin pin-camera">📷</span>
-      <span class="map-pin pin-star">★</span>
-      <span class="map-pin pin-park">P</span>
-      <span class="map-pin pin-car">🚐</span>
-      <span class="map-pin pin-acts">🎭</span>
-      <button class="filter-btn">☷ Suodata</button>
-      <a class="map-add" href="uusi-matka.html">＋<small>Lisää<br>paikka tai<br>muisto</small></a>
-    </div>
+  <section class="section">
+    <div class="section-head"><h2>Sinun muistosi Lahdesta</h2><a class="more">Näytä kaikki ›</a></div>
+    <div class="memory-row"><div class="memory" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80')"><b>Auringonlasku</b></div><div class="memory" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80')"><b>Kahvi satamassa</b></div><a class="add-memory" href="uusi-matka.html">＋<br><span>Lisää muisto</span></a></div>
   </section>
 </main>
 
-<nav class="bottomnav model-bottomnav">
-  <a href="index.html"><span>⌂</span>Etusivu</a>
-  <a href="kartta.html"><span>♧</span>Kartta</a>
-  <a href="uusi-matka.html" class="plusnav">＋<small>Uusi matka</small></a>
-  <a href="paivakirja.html"><span>♡</span>Suosikit</a>
-  <a href="profiili.html"><span>♙</span>Minä</a>
-</nav>
+<nav class="bottomnav"><a href="index.html" class=""><span>🏠</span>Koti</a><a href="kartta.html" class="active"><span>🗺️</span>Kartta</a><a href="uusi-matka.html" class="plusnav">＋</a><a href="paivakirja.html" class=""><span>🧳</span>Matkat</a><a href="profiili.html" class=""><span>👤</span>Minä</a></nav>
 </div>
 <script src="data.js"></script>
 <script src="sovellus.js"></script>
