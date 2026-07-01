@@ -1,1 +1,14 @@
-Pura ZIP ja lataa kansion sisällä olevat tiedostot GitHubiin. Älä lataa ZIP-tiedostoa.
+Matkaile Suomessa v30
+
+Muutokset:
+- Etusivun rakenne pidetty alkuperäisen mallin mukaisena.
+- Etusivun teksti päivitetty sovelluksen tarkoitukseen.
+- Etusivun taustakuva vaihtuu automaattisesti eri suomalaismaisemien välillä.
+- Karavaanarin vinkit korjattu: Pysäköinti poistettu ja tilalla Matkaparkit.
+- Suomen kartta -sivua täydennetty maakuntarakenne huomioiden.
+- Päijät-Hämeen kuntalistasta poistettu turha “ei vielä käyty” -ajattelu; käydyt merkitään vain ikonilla.
+- Asikkalan kuntasivulle lisätty Oma kokemus -osio: arvio, käyntipäivä, ruokapaikka, kahvila ja kohokohta.
+
+Julkaisu Netlifyyn:
+1. Pura zip tai vedä tämä zip Netlifyn Deploys-kohtaan.
+2. Tarkista etusivu, kartta.html ja asikkala.html.

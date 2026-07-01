@@ -3,47 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kartta</title>
+  <title>Suomen kartta</title>
   <link rel="stylesheet" href="tyylit.css">
 </head>
 <body>
 <div class="app">
-
-<header class="hero small">
-  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><div><div class="logo-script">Suomen kartta ❤️</div><div class="logo-sub">Kunnat ja maakunnat</div></div><button class="icon-btn">🔍</button></div>
+<header class="hero small map-hero">
+  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><div><div class="logo-script">Suomen kartta ♡</div><div class="logo-sub">Maakunnat ja kunnat</div></div><button class="icon-btn">🔍</button></div>
+  <div class="hero-title"><h1>Minun Suomeni</h1><p>Valitse maakunta tai kunta. Käydyt paikat värittyvät vihreäksi.</p></div>
 </header>
 <main class="content">
   <section class="kpi">
-    <div><b>5</b><span class="muted">kuntaa</span></div>
-    <div><b>1</b><span class="muted">maakunta</span></div>
-    <div><b>2%</b><span class="muted">valmis</span></div>
+    <div><b>5</b><span class="muted">käytyä kuntaa</span></div>
+    <div><b>19</b><span class="muted">maakuntaa</span></div>
+    <div><b>308</b><span class="muted">kuntaa</span></div>
   </section>
+
   <section class="section mapbox">
-    <div class="section-head"><h2>Minun Suomeni</h2><a class="more">Suodata</a></div>
-    <div class="tabs"><button class="tab active">Kaikki</button><button class="tab">Käyty</button><button class="tab">Suosikit</button><button class="tab">Yöpyminen</button></div>
-    <div class="finmap">
+    <div class="section-head"><h2>Avaa kartta</h2><a class="more" href="paijat-hame.html">Päijät-Häme ›</a></div>
+    <div class="tabs"><button class="tab active">Kaikki</button><button class="tab">Käydyt</button><button class="tab">Haluan käydä</button><button class="tab">Suosikit</button></div>
+    <div class="finmap improved-map" aria-label="Suomen kartta">
       <div class="finland-shape"></div>
-      <a class="marker" style="left:49%;top:11%" href="#">Lappi</a>
-      <a class="marker" style="left:48%;top:28%" href="#">P-P</a>
-      <a class="marker" style="left:59%;top:43%" href="#">Kainuu</a>
-      <a class="marker" style="left:43%;top:50%" href="#">KS</a>
-      <a class="marker gold" style="left:47%;top:67%" href="paijat-hame.html">PH</a>
-      <a class="marker done" style="left:39%;top:71%" href="asikkala.html">Asikkala</a>
-      <a class="marker" style="left:53%;top:74%" href="#">EK</a>
-      <a class="marker" style="left:37%;top:80%" href="#">Uusimaa</a>
-      <a class="marker" style="left:24%;top:85%" href="#">Ahvenanmaa</a>
+      <a class="region r-lappi" href="#"><span>Lappi</span></a>
+      <a class="region r-pohjois-pohjanmaa" href="#"><span>Pohjois-Pohjanmaa</span></a>
+      <a class="region r-kainuu" href="#"><span>Kainuu</span></a>
+      <a class="region r-keski-suomi" href="#"><span>Keski-Suomi</span></a>
+      <a class="region r-pirkanmaa" href="#"><span>Pirkanmaa</span></a>
+      <a class="region r-paijat done" href="paijat-hame.html"><span>Päijät-Häme</span></a>
+      <a class="region r-uusimaa" href="#"><span>Uusimaa</span></a>
+      <a class="region r-varsinais" href="#"><span>Varsinais-Suomi</span></a>
+      <a class="region r-ahvenanmaa" href="#"><span>Ahvenanmaa</span></a>
     </div>
+    <p class="muted map-note">Kartta on valmiina käyttölogiikkaan: maakunta avaa maakuntasivun, kunta avaa kunnan sivun ja käydyt kohteet näkyvät vihreinä.</p>
   </section>
+
   <section class="section">
-    <div class="section-head"><h2>Lähellä kartalla</h2></div>
-    <div class="list">
-      <a class="card row" href="asikkala.html"><div class="round">📍</div><div><b>Asikkala</b><div class="muted">Kuntasivu · palvelut · muistot</div></div></a>
-      <a class="card row" href="paijat-hame.html"><div class="round">🗺️</div><div><b>Päijät-Häme</b><div class="muted">Maakunta ja kunnat</div></div></a>
+    <div class="section-head"><h2>Maakunnat</h2></div>
+    <div class="list compact-list">
+      <a class="card row" href="paijat-hame.html"><div class="round done-dot">✓</div><div><b>Päijät-Häme</b><div class="muted">Asikkala, Lahti, Heinola…</div></div><span class="row-chev">›</span></a>
+      <a class="card row" href="#"><div class="round">📍</div><div><b>Kanta-Häme</b><div class="muted">Forssa, Hattula, Hämeenlinna…</div></div><span class="row-chev">›</span></a>
+      <a class="card row" href="#"><div class="round">📍</div><div><b>Uusimaa</b><div class="muted">Helsinki, Porvoo, Raasepori…</div></div><span class="row-chev">›</span></a>
     </div>
   </section>
 </main>
-
-<nav class="bottomnav"><a href="index.html" class=""><span>🏠</span>Koti</a><a href="kartta.html" class="active"><span>🗺️</span>Kartta</a><a href="uusi-matka.html" class="plusnav">＋</a><a href="paivakirja.html" class=""><span>🧳</span>Matkat</a><a href="profiili.html" class=""><span>👤</span>Minä</a></nav>
+<nav class="bottomnav"><a href="index.html"><span>🏠</span>Koti</a><a href="kartta.html" class="active"><span>🗺️</span>Kartta</a><a href="uusi-matka.html" class="plusnav">＋</a><a href="paivakirja.html"><span>🧳</span>Matkat</a><a href="profiili.html"><span>👤</span>Minä</a></nav>
 </div>
 <script src="data.js"></script>
 <script src="sovellus.js"></script>
