@@ -1,66 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matkalla Suomessa</title>
-  <link rel="stylesheet" href="tyylit.css" />
+  <link rel="stylesheet" href="tyylit.css">
 </head>
 <body>
-  <div class="phone-shell">
-    <header class="hero finnish-hero">
-      <div class="topbar">
-        <button class="circle">☰</button>
-        <div class="right-icons"><button class="circle">🔍</button><button class="circle">🔔</button></div>
-      </div>
-      <div class="brand-script">Matkalla <span>♡</span></div>
-      <div class="brand-block">SUOMESSA</div>
-      <p class="tagline">Suomen matkailun oma päiväkirja</p>
-      <div class="camper">🚐</div>
-    </header>
+<div class="app">
 
-    <main class="content overlap">
-      <a class="search" href="kartta.html">🔍 <span>Hae kuntaa, paikkaa tai nähtävyyttä...</span></a>
-
-      <section class="quick-actions two">
-        <a class="action-card green" href="uusi-matka.html"><span class="big-icon">＋</span><b>Uusi matka</b><small>Tallenna uusi matka hetkessä</small></a>
-        <a class="action-card light" href="kartta.html"><span class="big-icon map-icon">🗺️</span><b>Avaa kartta</b><small>Tutki paikkoja ja merkitse käydyksi</small></a>
-      </section>
-
-      <section class="mini-stats">
-        <div><b>91</b><span>Käytyä kuntaa</span></div>
-        <div><b>29,5%</b><span>Suomesta</span></div>
-        <div><b>12</b><span>Maakuntaa</span></div>
-      </section>
-
-      <div class="section-head"><h2>Omat matkat</h2><a href="paivakirja.html">Näytä kaikki ›</a></div>
-      <a class="continue-card" href="paijat-hame.html">
-        <div class="continue-img lake"></div>
-        <div class="continue-text"><small>Keskeneräinen matka</small><h3>Päijät-Häme</h3><p>Asikkala – Vääksy – Pulkkilanharju</p><div class="bar"><i style="width:63%"></i></div><p class="progress">Käyty kunnista 5 / 8 <b>63%</b></p></div>
-      </a>
-
-      <div class="section-head"><h2>Suosikit</h2><a href="paivakirja.html">Näytä kaikki ›</a></div>
-      <section class="favorite-grid">
-        <a class="fav castle" href="paijat-hame.html"><button>❤</button><b>Häme</b><span>5 kohdetta</span></a>
-        <a class="fav shore" href="paijat-hame.html"><button>❤</button><b>Varsinais-Suomi</b><span>3 kohdetta</span></a>
-        <a class="fav sunset" href="paijat-hame.html"><button>❤</button><b>Päijänne</b><span>2 kohdetta</span></a>
-        <a class="fav aurora" href="paijat-hame.html"><button>❤</button><b>Lappi</b><span>1 kohde</span></a>
-      </section>
-
-      <div class="section-head"><h2>Karavaanarin vinkit</h2><a href="kartta.html">Kartalla ›</a></div>
-      <section class="tips-grid">
-        <a href="kartta.html" class="tip mint"><span>🚐</span><b>Leirintäalueet</b><small>1200+ kohdetta</small></a>
-        <a href="kartta.html" class="tip blue"><span>💧</span><b>Palvelupisteet</b><small>Etsi läheltä</small></a>
-        <a href="kartta.html" class="tip lilac"><span>🅿️</span><b>Pysäköinti</b><small>Yöpymispaikat</small></a>
-        <a href="kartta.html" class="tip peach"><span>🍴</span><b>Ravintolat</b><small>Paikallisia suosikkeja</small></a>
-      </section>
-
-      <div class="section-head"><h2>Lisää tietoja matkaasi</h2><a href="paivakirja.html">Näytä lisää⌄</a></div>
-      <section class="add-grid">
-        <a href="paivakirja.html">📷<b>Kuvat</b></a><a href="paivakirja.html">☕<b>Kahvila</b></a><a href="paivakirja.html">🏕️<b>Leirintäalue</b></a><a href="paivakirja.html">📝<b>Muistiinpanot</b></a>
-      </section>
-    </main>
-    <nav class="bottom-nav"><a class="active" href="index.html">🏠<span>Etusivu</span></a><a href="kartta.html">🗺️<span>Kartta</span></a><a class="plus" href="uusi-matka.html">＋</a><a href="paivakirja.html">🧳<span>Matkat</span></a><a href="profiili.html">👤<span>Minä</span></a></nav>
+<header class="hero">
+  <div class="toprow">
+    <button class="icon-btn">☰</button>
+    <div style="text-align:center">
+      <div class="logo-script">Matkalla <span>❤️</span></div>
+      <div class="logo-sub">Suomessa</div>
+    </div>
+    <button class="icon-btn">🔔</button>
   </div>
+  <div class="hero-title">
+    <h1>Suomen matkailun oma päiväkirja</h1>
+    <p>Löydä kohteet, tallenna muistot ja rakenna oma Suomen karttasi.</p>
+  </div>
+  <div class="search"><span>🔍</span><input placeholder="Hae kuntaa, kohdetta tai nähtävyyttä..."></div>
+</header>
+<main class="content">
+  <section class="actions">
+    <a class="action-card" href="kartta.html"><div class="action-ico">🗺️</div><b>Avaa kartta</b><small>Tutki Suomea kunnittain ja maakunnittain</small></a>
+    <a class="action-card" href="uusi-matka.html"><div class="action-ico">➕</div><b>Lisää matka</b><small>Tallenna reissu, kuvat ja muistot</small></a>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Omat matkat</h2><a class="more" href="paivakirja.html">Näytä kaikki</a></div>
+    <a class="card trip-card" href="matka-paijat-hame.html">
+      <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80')"></div>
+      <div>
+        <span class="badge">Kesken</span>
+        <h3 style="margin:8px 0 4px">Kesäloma Päijät-Hämeessä</h3>
+        <div class="muted">Asikkala · Lahti · Heinola</div>
+        <div class="progress"><i style="width:63%"></i></div>
+        <div class="muted">📷 18 kuvaa · 📝 5 muistiinpanoa</div>
+      </div>
+    </a>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Suosikit</h2><a class="more">Näytä kaikki</a></div>
+    <div class="grid2">
+      <a class="tile img-tile" href="paijat-hame.html" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80')"><div><b>❤️ Päijät-Häme</b><small>Järvet ja harjut</small></div></a>
+      <div class="tile img-tile" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80')"><div><b>❤️ Lappi</b><small>Ruska ja tunturit</small></div></div>
+      <div class="tile img-tile" style="background-image:url('https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=500&q=80')"><div><b>❤️ Saimaa</b><small>Vesistöreitit</small></div></div>
+      <div class="tile img-tile" style="background-image:url('https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=500&q=80')"><div><b>❤️ Saaristo</b><small>Kesän klassikko</small></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Matkailijan vinkit</h2></div>
+    <div class="grid2">
+      <a class="tile" href="asikkala.html"><div class="emoji">🏕️</div><b>Leirintäalueet</b><small>Yövy mukavasti</small></a>
+      <a class="tile" href="asikkala.html"><div class="emoji">🚐</div><b>Matkaparkit</b><small>Nopeat pysähdykset</small></a>
+      <a class="tile" href="asikkala.html"><div class="emoji">🍽️</div><b>Ravintolat</b><small>Paikalliset maut</small></a>
+      <a class="tile" href="asikkala.html"><div class="emoji">☕</div><b>Kahvilat</b><small>Reissun tauot</small></a>
+    </div>
+  </section>
+</main>
+
+<nav class="bottomnav"><a href="index.html" class="active"><span>🏠</span>Koti</a><a href="kartta.html" class=""><span>🗺️</span>Kartta</a><a href="uusi-matka.html" class="plusnav">＋</a><a href="paivakirja.html" class=""><span>🧳</span>Matkat</a><a href="profiili.html" class=""><span>👤</span>Minä</a></nav>
+</div>
+<script src="data.js"></script>
+<script src="sovellus.js"></script>
 </body>
 </html>

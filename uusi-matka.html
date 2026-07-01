@@ -1,15 +1,35 @@
-<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Uusi matka</title><link rel="stylesheet" href="tyylit.css"></head><body><div class="phone-shell form-page">
-<header class="page-head"><a class="circle" href="paivakirja.html">‹</a><h1>＋ Uusi matka</h1></header>
-<main class="content form-content">
-  <section class="cover-upload"><span>📷</span><b>Lisää kansikuva</b><small>Ota kuva tai valitse puhelimesta</small></section>
-  <label>Matkan nimi<input placeholder="Esim. Kesäretki Päijät-Hämeeseen"></label>
-  <div class="form-two"><label>Alkaa<input type="date"></label><label>Päättyy<input type="date"></label></div>
-  <div class="form-two"><label>Maakunta<select><option>Päijät-Häme</option><option>Lappi</option><option>Varsinais-Suomi</option></select></label><label>Kunta<input placeholder="Asikkala"></label></div>
-  <details class="more-box"><summary>Lisää tietoja</summary><label>Matkatyyppi<select><option>Karavaanimatka</option><option>Päiväretki</option><option>Viikonloppu</option><option>Lomamatka</option></select></label><label>Seurue<input placeholder="Esim. 2 aikuista + Otto"></label><label class="toggle-line"><span>Merkitse suosikiksi</span><input type="checkbox"></label></details>
-  <section class="add-section"><h2>📸 Kuvat</h2><button>＋ Lisää kuvia</button><p>Ei vielä kuvia. Kuvat tallentuvat tämän matkan alle.</p></section>
-  <section class="add-section"><h2>📝 Muistiinpanot</h2><button>＋ Lisää muistiinpano</button></section>
-  <section class="add-section grid-actions"><a>📍 Kohde</a><a>🍽 Ravintola</a><a>☕ Kahvila</a><a>🏕 Yöpyminen</a></section>
-  <button class="save-btn">Tallenna matka</button>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uusi matka</title>
+  <link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+<div class="app">
+
+<header class="hero small">
+  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><div><div class="logo-script">Uusi matka ❤️</div><div class="logo-sub">Tallenna reissu</div></div><button class="icon-btn">📷</button></div>
+</header>
+<main class="content">
+  <section class="card">
+    <div class="photo" style="min-height:150px;display:grid;place-items:center;color:#fff;font-weight:900;background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80')">📷 Lisää kansikuva</div>
+  </section>
+  <section class="section form">
+    <div class="field"><label>Matkan nimi</label><input id="tripName" placeholder="Esim. Kesäloma Päijät-Hämeessä"></div>
+    <div class="grid2"><div class="field"><label>Alkaa</label><input type="date"></div><div class="field"><label>Päättyy</label><input type="date"></div></div>
+    <div class="grid2"><div class="field"><label>Maakunta</label><select><option>Päijät-Häme</option><option>Lappi</option></select></div><div class="field"><label>Kunta</label><select><option>Asikkala</option><option>Lahti</option></select></div></div>
+    <div class="field"><label>Lisää tietoja</label><input placeholder="Matkatyyppi, seurue tai muu huomio"></div>
+    <div class="field"><label>Kuvat</label><input type="file" multiple accept="image/*"><div class="muted">Lisää kuvia jo matkaa luodessa.</div></div>
+    <div class="field"><label>Muistiinpano</label><textarea rows="4" placeholder="Mitä haluat muistaa tästä matkasta?"></textarea></div>
+    <button class="primary" onclick="saveTrip()">Tallenna matka</button>
+  </section>
 </main>
-<nav class="bottom-nav"><a href="index.html">🏠<span>Etusivu</span></a><a href="kartta.html">🗺️<span>Kartta</span></a><a class="plus active" href="uusi-matka.html">＋</a><a href="paivakirja.html">🧳<span>Matkat</span></a><a href="profiili.html">👤<span>Minä</span></a></nav>
-</div></body></html>
+
+<nav class="bottomnav"><a href="index.html" class=""><span>🏠</span>Koti</a><a href="kartta.html" class=""><span>🗺️</span>Kartta</a><a href="uusi-matka.html" class="plusnav">＋</a><a href="paivakirja.html" class=""><span>🧳</span>Matkat</a><a href="profiili.html" class=""><span>👤</span>Minä</a></nav>
+</div>
+<script src="data.js"></script>
+<script src="sovellus.js"></script>
+</body>
+</html>

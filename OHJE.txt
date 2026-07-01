@@ -1,1 +1,1 @@
-Päivitys v25: Omat matkat, uusi matka, matkan oma sivu ja Asikkalan kuntasivun runko. Lataa kaikki tämän kansion tiedostot GitHubiin. Älä lataa ZIP-tiedostoa sellaisenaan.
+Pura ZIP ja lataa kansion sisällä olevat tiedostot GitHubiin. Älä lataa ZIP-tiedostoa.
