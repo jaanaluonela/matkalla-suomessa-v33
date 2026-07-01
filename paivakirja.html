@@ -1,1 +1,72 @@
-<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Päiväkirja</title><link rel="stylesheet" href="tyylit.css"></head><body><div class="phone-shell"><header class="page-head"><a class="circle" href="index.html">‹</a><h1>Kaikki matkat ♡</h1></header><main><section class="content"><a class="search">🔍 Hae matkaa, paikkaa tai muistiinpanoa...</a></section><section class="list-card"><h3>📍 Päijät-Häme</h3><p>Asikkala – Vääksy – Pulkkilanharju</p><p>📷 12 kuvaa · 📝 4 muistiinpanoa · ⭐ Suosikki</p><div class="bar"><i style="width:63%"></i></div></section><section class="list-card"><h3>📍 Lappi</h3><p>Rovaniemi – Inari – Utsjoki – Levi</p><p>📷 48 kuvaa · 📝 12 muistiinpanoa</p></section><section class="list-card"><h3>📍 Varsinais-Suomi</h3><p>Turku – Naantali – Kustavi</p><p>📷 31 kuvaa · 📝 9 muistiinpanoa</p></section></main><nav class="bottom-nav"><a href="index.html">🏠<span>Etusivu</span></a><a href="kartta.html">🗺️<span>Kartta</span></a><a class="plus" href="paivakirja.html">＋</a><a class="active" href="paivakirja.html">📖<span>Päiväkirja</span></a><a href="profiili.html">👤<span>Minä</span></a></nav></div></body></html>
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omat matkat – Matkalla Suomessa</title>
+  <link rel="stylesheet" href="tyylit.css" />
+</head>
+<body>
+<div class="phone-shell trips-page">
+  <header class="soft-head trips-head">
+    <a class="circle small" href="index.html">‹</a>
+    <div>
+      <div class="brand-small">Kaikki matkat <span>♡</span></div>
+      <p>Muistot. Seikkailut. Suomen kauneus.</p>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="search-row">
+      <a class="search slim" href="#">🔍 <span>Hae matkaa, kuntaa tai muistiinpanoa...</span></a>
+      <button class="filter-btn">⚙️ Suodatus</button>
+    </div>
+
+    <section class="chips">
+      <button class="active">Kaikki</button>
+      <button>Kesken</button>
+      <button>Valmiit</button>
+      <button>Suosikit ♡</button>
+      <button>Karavaanimatkat</button>
+    </section>
+
+    <div class="sort-row"><h2>Viimeisimmät matkat</h2><span>Järjestä: Uusimmat ensin⌄</span></div>
+
+    <a class="trip-card featured" href="matka-paijat-hame.html">
+      <div class="trip-photo lake"><span class="badge">▶ Jatka matkaa</span></div>
+      <div class="trip-info">
+        <div class="trip-top"><h3>📍 Päijät-Häme</h3><span>⋮</span></div>
+        <p>Asikkala – Vääksy – Pulkkilanharju</p>
+        <small>📅 28.6.2026 – 30.6.2026</small>
+        <div class="trip-tags"><span>📷 12 kuvaa</span><span>📝 4 muistiinpanoa</span><span>⭐ Suosikki</span></div>
+        <div class="bar"><i style="width:63%"></i></div>
+        <p class="progress">Käyty kunnista 5 / 8 <b>63%</b></p>
+      </div>
+    </a>
+
+    <a class="trip-card" href="matka-paijat-hame.html">
+      <div class="trip-photo aurora"></div>
+      <div class="trip-info"><div class="trip-top"><h3>📍 Lappi</h3><span>⋮</span></div><p>Rovaniemi – Inari – Utsjoki – Levi</p><small>📅 15.3.2026 – 22.3.2026</small><div class="trip-tags"><span>📷 48 kuvaa</span><span>📝 12 muistiinpanoa</span></div></div>
+    </a>
+    <a class="trip-card" href="matka-paijat-hame.html">
+      <div class="trip-photo shore"></div>
+      <div class="trip-info"><div class="trip-top"><h3>📍 Ahvenanmaa</h3><span>⋮</span></div><p>Maarianhamina – Föglö – Kökar</p><small>📅 10.8.2025 – 14.8.2025</small><div class="trip-tags"><span>📷 23 kuvaa</span><span>📝 6 muistiinpanoa</span></div></div>
+    </a>
+    <a class="trip-card" href="matka-paijat-hame.html">
+      <div class="trip-photo castle"></div>
+      <div class="trip-info"><div class="trip-top"><h3>📍 Varsinais-Suomi</h3><span>⋮</span></div><p>Turku – Naantali – Kustavi</p><small>📅 4.7.2025 – 8.7.2025</small><div class="trip-tags"><span>📷 31 kuvaa</span><span>📝 9 muistiinpanoa</span></div></div>
+    </a>
+
+    <section class="stats-panel">
+      <h3>Pikatilastot</h3>
+      <div><span>Matkoja yhteensä</span><b>24</b></div>
+      <div><span>Päiviä matkassa</span><b>113</b></div>
+      <div><span>Käytyjä kuntia</span><b>91</b></div>
+      <div><span>Kuvia yhteensä</span><b>2 146</b></div>
+    </section>
+  </main>
+  <a class="floating-add" href="uusi-matka.html">＋<small>Uusi matka</small></a>
+  <nav class="bottom-nav"><a href="index.html">🏠<span>Etusivu</span></a><a href="kartta.html">🗺️<span>Kartta</span></a><a class="plus" href="uusi-matka.html">＋</a><a class="active" href="paivakirja.html">🧳<span>Matkat</span></a><a href="profiili.html">👤<span>Minä</span></a></nav>
+</div>
+</body>
+</html>

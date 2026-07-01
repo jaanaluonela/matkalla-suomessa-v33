@@ -1,6 +1,1 @@
-Lataa GitHubiin nämä tiedostot ZIPin sisältä, ei itse ZIP-tiedostoa.
-Päivitys v24:
-- Suomen näköisempi karttasivu
-- Etusivu lähemmäs mallia
-- Suosikit ja karavaanarin vinkit ruudukossa
-- Kaunokirjoituslogo ja sydän
+Päivitys v25: Omat matkat, uusi matka, matkan oma sivu ja Asikkalan kuntasivun runko. Lataa kaikki tämän kansion tiedostot GitHubiin. Älä lataa ZIP-tiedostoa sellaisenaan.
