@@ -1,20 +1,15 @@
-Päivitys v30 – Karavaanari-osio
+Matkaile Suomessa v34
 
-Tässä versiossa on lisätty oma Karavaanari-osio.
+Päivitys tehty nykyiseen v33-projektiin.
 
-Mukana ovat:
-- Leirintäalueet
-- Matkaparkit
-- Huoltopisteet
-- Sähkö
-- Ruokailu
-- Kaupat
+Mukana:
+- Suomen muotoinen maakuntakartta kartta.html-sivulle.
+- Kaikki 19 maakuntaa näkyvät kartassa.
+- Päijät-Häme on klikattava ja merkitty aloitettuna/käytynä vihreällä.
+- Päijät-Hämeen maakuntasivulla on oma kuntakartta.
+- Asikkala ja Lahti avautuvat kuntasivuille.
+- Kuntasivuja on täydennetty: käyty / haluan käydä / suosikki, nähtävyydet ja oma kokemus.
+- Etusivun rakennetta ei muutettu.
 
-Pois jätetty tarkoituksella:
-- tankkauspaikat
-- tapahtumat
-- reittiehdotukset
-- tarkistuslista
-- yleinen pysäköinti
-
-Tämä ZIP voidaan ladata Netlifyyn testiversiona.
+Tarkoitus:
+Tutustu uusiin paikkoihin ja tallenna omat parhaat muistosi Suomesta.
