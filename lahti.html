@@ -9,14 +9,14 @@
 <body>
 <div class="app">
 
-<header class="hero small" style="background-image:linear-gradient(180deg,rgba(10,35,25,.22),rgba(10,35,25,.76)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80')">
-  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><button class="icon-btn">♡</button></div>
-  <div class="hero-title"><h1>Lahti</h1><p>Päijät-Häme · satama, kulttuuri ja kaupunkikohteet</p></div>
+<header class="city-hero" style="background-image:linear-gradient(180deg,rgba(7,28,22,.08),rgba(7,28,22,.72)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85')">
+  <div class="toprow"><button class="icon-btn" onclick="history.back()">‹</button><div></div><button class="icon-btn">♡</button></div>
+  <div class="city-title"><div class="city-crest">⚜</div><h1>Lahti</h1><p>Eläväinen kaupunki Vesijärven rannoilla Päijät-Hämeessä. 💙</p></div>
 </header>
 <main class="content">
-  <section class="kpi"><div><b>✅</b><span class="muted">käyty</span></div><div><b>12</b><span class="muted">palvelua</span></div><div><b>4.7</b><span class="muted">arvio</span></div></section>
+  <section class="city-note"><div class="round">🌿</div><p>Lahti on tunnettu urheilukaupungista, upeasta järviluonnostaan, tapahtumistaan ja monipuolisista palveluistaan.</p></section>
   <section class="section">
-    <div class="section-head"><h2>Palvelut kunnassa</h2></div>
+    <div class="section-head"><h2>Palvelut Lahdessa</h2></div>
     <div class="grid2">
       <div class="tile"><div class="emoji">📍</div><b>Nähtävyydet</b><small>Kanava, satama, luonto</small></div>
       <div class="tile"><div class="emoji">🍽️</div><b>Ravintolat</b><small>Ruokapaikat ja terassit</small></div>
@@ -31,8 +31,16 @@
     </div>
   </section>
   <section class="section">
-    <div class="section-head"><h2>Omat muistot</h2></div>
-    <div class="card"><b>📷 Kuvat ja muistiinpanot</b><p class="muted">Tähän tulevat käyttäjän omat kuvat, arviot ja päiväkirjamerkinnät tästä kunnasta.</p></div>
+    <div class="section-head"><h2>Suosituimmat kohteet Lahdessa</h2><a class="more">Näytä kaikki ›</a></div>
+    <div class="h-scroll">
+      <div class="place-card" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80')"><span>♡</span><b>Lahden satama</b><small>★ 4,7 (128)</small></div>
+      <div class="place-card" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=80')"><span>♡</span><b>Sibeliustalo</b><small>★ 4,8 (92)</small></div>
+      <div class="place-card" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80')"><span>♡</span><b>Hyppyrimäet</b><small>★ 4,6 (77)</small></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head"><h2>Sinun muistosi Lahdesta</h2><a class="more">Näytä kaikki ›</a></div>
+    <div class="memory-row"><div class="memory" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80')"><b>Auringonlasku</b></div><div class="memory" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80')"><b>Kahvi satamassa</b></div><a class="add-memory" href="uusi-matka.html">＋<br><span>Lisää muisto</span></a></div>
   </section>
 </main>
 
