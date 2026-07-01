@@ -1,15 +1,6 @@
-Matkaile Suomessa v34
+Matkaile Suomessa – v35 Suomen kartta
 
-Päivitys tehty nykyiseen v33-projektiin.
+Tässä versiossa kartta.html on päivitetty Suomen muotoiseksi SVG-kartaksi.
+Mukana on 19 maakuntaa, maakuntarajat, Ahvenanmaa ja klikattava Päijät-Häme.
 
-Mukana:
-- Suomen muotoinen maakuntakartta kartta.html-sivulle.
-- Kaikki 19 maakuntaa näkyvät kartassa.
-- Päijät-Häme on klikattava ja merkitty aloitettuna/käytynä vihreällä.
-- Päijät-Hämeen maakuntasivulla on oma kuntakartta.
-- Asikkala ja Lahti avautuvat kuntasivuille.
-- Kuntasivuja on täydennetty: käyty / haluan käydä / suosikki, nähtävyydet ja oma kokemus.
-- Etusivun rakennetta ei muutettu.
-
-Tarkoitus:
-Tutustu uusiin paikkoihin ja tallenna omat parhaat muistosi Suomesta.
+Etusivun rakennetta ei ole muutettu.
