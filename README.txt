@@ -1,6 +1,20 @@
-Matkaile Suomessa – v35 Suomen kartta
+Päivitys v30 – Karavaanari-osio
 
-Tässä versiossa kartta.html on päivitetty Suomen muotoiseksi SVG-kartaksi.
-Mukana on 19 maakuntaa, maakuntarajat, Ahvenanmaa ja klikattava Päijät-Häme.
+Tässä versiossa on lisätty oma Karavaanari-osio.
 
-Etusivun rakennetta ei ole muutettu.
+Mukana ovat:
+- Leirintäalueet
+- Matkaparkit
+- Huoltopisteet
+- Sähkö
+- Ruokailu
+- Kaupat
+
+Pois jätetty tarkoituksella:
+- tankkauspaikat
+- tapahtumat
+- reittiehdotukset
+- tarkistuslista
+- yleinen pysäköinti
+
+Tämä ZIP voidaan ladata Netlifyyn testiversiona.
