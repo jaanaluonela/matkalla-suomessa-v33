@@ -3,81 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#1f7a4a">
+  <meta name="theme-color" content="#0f5f50">
   <title>Matkaile Suomessa</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="tyylit.css">
 </head>
 <body>
-<div class="app">
+<div class="app v29-app">
 
-<header class="home-hero clean-home">
-  <div class="toprow floating-top">
-    <button class="icon-btn">☰</button>
-    <div></div>
-    <button class="icon-btn">🔔</button>
+<header class="v29-hero">
+  <div class="v29-status"><span>9.41</span><span>▮▮▮  Wi‑Fi  ▭</span></div>
+  <div class="v29-toprow">
+    <button class="v29-round" aria-label="Valikko"><span></span><span></span><span></span></button>
+    <a class="v29-bell" href="profiili.html" aria-label="Ilmoitukset"></a>
   </div>
 
-  <div class="brand-block">
-    <div class="logo-script huge">Matkaile <span class="brand-heart">♡</span></div>
-    <div class="logo-sub big">SUOMESSA</div>
-    <p><span>Koe.</span> Tutustu. Muista.</p>
+  <div class="v29-brand">
+    <div class="v29-script">Matkaile <span>♡</span></div>
+    <div class="v29-sub">SUOMESSA</div>
+    <p><i>Koe.</i> Tutustu. Muista.</p>
   </div>
-  <div class="hero-rv" aria-hidden="true">🚐</div>
 
-  <div class="search hero-search"><span>🔍</span><input placeholder="Hae kuntaa, paikkaa tai nähtävyyttä..."></div>
+  <div class="v29-camper" aria-hidden="true">
+    <div class="rv-body"><i></i><b></b><em></em></div>
+    <span></span><span></span>
+  </div>
+
+  <label class="v29-search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Zm5.2-1.9 4.4 4.4"/></svg>
+    <input placeholder="Hae kuntaa, paikkaa tai nähtävyyttä...">
+  </label>
 </header>
 
-<main class="content home-content">
-  <section class="actions raised">
-    <a class="action-card main-action" href="kartta.html">
-      <div class="action-ico fin-ico">🇫🇮</div>
-      <div><b>Avaa kartta</b><small>Tutustu Suomeen maakunta kerrallaan</small></div>
-      <span class="chev">›</span>
+<main class="v29-content">
+  <section class="v29-main-actions" aria-label="Päätoiminnot">
+    <a class="v29-action map-action" href="kartta.html">
+      <div class="v29-finland" aria-hidden="true"><span></span></div>
+      <div class="v29-action-text"><b>Avaa kartta</b><small>Tutustu Suomeen maakunta kerrallaan</small></div>
+      <strong>›</strong>
     </a>
-    <a class="action-card main-action" href="uusi-matka.html">
-      <div class="action-ico plus-ico">＋</div>
-      <div><b>Lisää matka</b><small>Tallenna uusi kohde ja muistot</small></div>
-      <span class="chev">›</span>
+    <a class="v29-action add-action" href="uusi-matka.html">
+      <div class="v29-plus" aria-hidden="true">+</div>
+      <div class="v29-action-text"><b>Lisää matka</b><small>Tallenna uusi kohde ja muistot</small></div>
+      <strong>›</strong>
     </a>
   </section>
 
-  <section class="section">
-    <div class="section-head"><h2>Jatka matkaa</h2><a class="more" href="paivakirja.html">Näytä kaikki ›</a></div>
-    <a class="continue-card" href="matka-paijat-hame.html">
-      <div class="continue-img" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80')"></div>
-      <div class="continue-info">
-        <span class="muted">Viimeisin matka</span>
+  <section class="v29-section">
+    <div class="v29-section-head"><h2>Jatka matkaa</h2><a href="paivakirja.html">Näytä kaikki ›</a></div>
+    <a class="v29-continue" href="matka-paijat-hame.html">
+      <div class="v29-continue-img" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80')"></div>
+      <div class="v29-continue-text">
+        <small>Viimeisin matka</small>
         <h3>Päijät-Häme</h3>
         <p>Asikkala – Vääksy – Pulkkilanharju</p>
-        <div class="progress-row"><div class="progress"><i style="width:63%"></i></div><b>63%</b></div>
-        <span class="muted">Käyty kunnista 5 / 8</span>
+        <div class="v29-progress"><i style="width:63%"></i></div>
+        <div class="v29-progress-row"><span>Käyty kunnista 5 / 8</span><b>63%</b></div>
       </div>
     </a>
   </section>
 
-  <section class="section">
-    <div class="section-head"><h2>Suosikit</h2><a class="more" href="paivakirja.html">Näytä kaikki ›</a></div>
-    <div class="h-scroll">
-      <a class="fav-card" href="paijat-hame.html" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80')"><span>❤️</span><b>Häme</b><small>5 kohdetta</small></a>
-      <a class="fav-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80')"><span>❤️</span><b>Varsinais-Suomi</b><small>3 kohdetta</small></a>
-      <a class="fav-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80')"><span>❤️</span><b>Päijänne</b><small>2 kohdetta</small></a>
-      <a class="fav-card" href="#" style="background-image:url('https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=500&q=80')"><span>❤️</span><b>Lappi</b><small>1 kohde</small></a>
+  <section class="v29-section">
+    <div class="v29-section-head"><h2>Suosikit</h2><a href="paivakirja.html">Näytä kaikki ›</a></div>
+    <div class="v29-favs">
+      <a class="v29-fav" href="paijat-hame.html" style="background-image:url('https://images.unsplash.com/photo-1604567178580-b84752c01827?auto=format&fit=crop&w=400&q=80')"><span>♡</span><b>Häme</b><small>5 kohdetta</small></a>
+      <a class="v29-fav" href="#" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80')"><span>♡</span><b>Varsinais-Suomi</b><small>3 kohdetta</small></a>
+      <a class="v29-fav" href="#" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80')"><span>♡</span><b>Päijänne</b><small>2 kohdetta</small></a>
+      <a class="v29-fav" href="#" style="background-image:url('https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=400&q=80')"><span>♡</span><b>Lappi</b><small>1 kohde</small></a>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><h2>Karavaanarin vinkit</h2></div>
-    <div class="tip-grid">
-      <a class="tip green" href="asikkala.html"><span>🚐</span><b>Leirintäalueet</b><small>1200+ kohdetta</small></a>
-      <a class="tip blue" href="asikkala.html"><span>💧</span><b>Palvelu-pisteet</b><small>Etsi läheltä</small></a>
-      <a class="tip purple" href="asikkala.html"><span>🅿️</span><b>Pysäköinti</b><small>Yöpymispaikat</small></a>
-      <a class="tip orange" href="asikkala.html"><span>🍴</span><b>Ravintolat</b><small>Paikallisia suosikkeja</small></a>
+  <section class="v29-section">
+    <h2>Karavaanarin vinkit</h2>
+    <div class="v29-tips">
+      <a class="v29-tip v29-tip-green" href="asikkala.html"><i class="icon-van"></i><b>Leirintäalueet</b><small>1200+ kohdetta</small></a>
+      <a class="v29-tip v29-tip-blue" href="asikkala.html"><i class="icon-service"></i><b>Palvelu-pisteet</b><small>Etsi läheltä</small></a>
+      <a class="v29-tip v29-tip-purple" href="asikkala.html"><i class="icon-park">P</i><b>Pysäköinti</b><small>Yöpymispaikat</small></a>
+      <a class="v29-tip v29-tip-orange" href="asikkala.html"><i class="icon-food"></i><b>Ravintolat</b><small>Paikallisia suosikkeja</small></a>
     </div>
   </section>
 </main>
 
-<nav class="bottomnav"><a href="index.html" class="active"><span>🏠</span>Koti</a><a href="kartta.html"><span>🗺️</span>Kartta</a><a href="uusi-matka.html" class="plusnav">＋</a><a href="paivakirja.html"><span>🧳</span>Matka</a><a href="profiili.html"><span>👤</span>Minä</a></nav>
+<a class="v29-float-plus" href="uusi-matka.html">+</a>
+<nav class="v29-bottomnav">
+  <a href="index.html" class="active"><i class="nav-home"></i><span>Koti</span></a>
+  <a href="kartta.html"><i class="nav-map"></i><span>Kartta</span></a>
+  <a href="uusi-matka.html" class="nav-center"><b>+</b><span>Matka</span></a>
+  <a href="paivakirja.html"><i class="nav-book"></i><span>Päiväkirja</span></a>
+  <a href="profiili.html"><i class="nav-user"></i><span>Minä</span></a>
+</nav>
 </div>
 <script src="data.js"></script>
 <script src="sovellus.js"></script>
